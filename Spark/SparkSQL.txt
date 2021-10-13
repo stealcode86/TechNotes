@@ -1,5 +1,5 @@
 #SparkSQL using Scala
-
+---------
 
 Creating Data Frames
 
