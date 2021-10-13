@@ -1,5 +1,4 @@
 # TechNotes
-Important Notes on the Tools / Technologies which I have worked on.
 
 1) Adding hours to a date
 ${time:millisecondsToDateTime(time:dateTimeToMilliseconds(time:now()) - (4 * 3600 * 1000))}
