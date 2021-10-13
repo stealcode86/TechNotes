@@ -2,9 +2,9 @@
 
 https://dev.mysql.com/doc/refman/5.7/en/alter-table.html#:~:text=1%20To%20use%20ALTER%20TABLE%2C%20you%20need%20ALTER,optional%20and%20can%20be%20omitted.%20More%20items...%20
 1) Update using JOINS
-update PADB.testowner.GENMstInfosysEstablishments
-set txtSAPCountryCode='IN'  FROM  PADB.testowner.GENMstInfosysEstablishments Est 
-				inner join PADB.testowner.ViewCurrEmpAllDetails viw on Est.txtEstablishmentCode=viw.txtDevCentreCode
+update PADB.testowner.abc
+set txtSAPCountryCode='IN'  FROM  PADB.testowner.abc Est 
+				inner join PADB.testowner.def viw on Est.txtEstablishmentCode=viw.txtDevCentreCode
 				where viw.txtEmpNo in ('912316','929800')
 
 2) SELECT DATEADD(hh, 2, 
@@ -34,10 +34,10 @@ where
    Object.id = comments.id 
    and UPPER(text) like '%<TABLENAME>%'
 
-6) IF EXISTS (SELECT count(*) FROM attendance.testowner.AttMstMailerConfigDetails WHERE txtEventCode = 'PROGENSUSS' HAVING count(*) > N-1 )
+6) IF EXISTS (SELECT count(*) FROM attendance.testowner.abc WHERE txtEventCode = 'PROGENSUSS' HAVING count(*) > N-1 )
 BEGIN
    SET ROWCOUNT N-1 
-   DELETE FROM attendance.testowner.AttMstMailerConfigDetails WHERE txtEventCode = 'PROGENSUSS' 
+   DELETE FROM attendance.testowner.abc WHERE txtEventCode = 'PROGENSUSS' 
    SET ROWCOUNT 0 
 END
 
@@ -47,19 +47,19 @@ FORMAT(DATEADD(HH,(txtToTime/60)%24,0),'HH:mm:ss') as txtToTime
 
 8) Select / Update ( Useful for writing where clause in kafka connector query )
 
-update Attendance.testowner.AtttrnSubsProcessedData set txtStatus='OS', fltOfficeHours='8' where txtEmpNo in 
+update Attendance.testowner.abc set txtStatus='OS', fltOfficeHours='8' where txtEmpNo in 
 ( select txtEmpNo from 
 ( select HR.txtempno,HR.txtcompany as txtCompany, E.txtSAPCountryCode as txtSAPCountry, ats.txtstatus, ats.dtAttendance
-from PADB.testowner.HrisMstEmployee HR  WITH (NOLOCK) INNER JOIN  PADB.testowner.ViewAllEmpDetails vie WITH (NOLOCK)     
-on HR.txtempno=vie.txtEmpNo INNER JOIN  PADB.testowner.GENMstInfosysEstablishments E with (Nolock)        
+from PADB.testowner.hr HR  WITH (NOLOCK) INNER JOIN  PADB.testowner.vie vie WITH (NOLOCK)     
+on HR.txtempno=vie.txtEmpNo INNER JOIN  PADB.testowner.grn E with (Nolock)        
 on vie.txtDevCentreCode=E.txtEstablishmentCode
-INNER JOIN Attendance.testowner.AtttrnSubsProcessedData ats on HR.txtEmpNo=ats.txtEmpNo where 
+INNER JOIN Attendance.testowner.ats ats on HR.txtEmpNo=ats.txtEmpNo where 
 ats.dtLastModified>=cast ( getdate()-365 as date) and ats.txtEmpNoModifiedBy='StreamS' and ats.txtcompany='PROGEN' and txtstatus='' 
 and E.txtSAPCountryCode IN ('NL','CR','AU' ) ) a )
 
 select EmpNo,LeaveFormId,Status,FromDate,ToDate,NoOfDays,LeaveType,LeaveTypeID,CreatedOn,ModifiedOn,Country from 
 ( select EmpNo,LeaveFormId,Status,FromDate, ToDate,NoOfDays,LeaveType,LeaveTypeID,CreatedOn,ModifiedOn,Country 
-from padb.testowner.ViewGlsTrnLeaveForms (nolock) where LeaveFormId in ('26115272','388050','388052') ) a
+from padb.testowner.vg (nolock) where LeaveFormId in ('26115272','388050','388052') ) a
 
 9) Creating table with unique serial no
 
@@ -87,12 +87,12 @@ Alter table Stu_Table rename to Stu_Table_10
 use Attendance
 
 sp_rename 'TABLE_NAME.COLUMN_NAME','COLUMN_NAME','COLUMN';
-sp_rename 'Attendance.misuser.AtttrnBPMPayRoll.txtMonth', 'intMonth', 'column';
+sp_rename 'Attendance.misuser.abc.txtMonth', 'intMonth', 'column';
 
-ALTER TABLE Attendance.misuser.AtttrnBPMPayRoll 
+ALTER TABLE Attendance.misuser.abc 
 ALTER COLUMN fltAmount decimal;
 
-alter table Attendance.misuser.AtttrnBPMShiftLog
+alter table Attendance.misuser.abc
 add flgUpdate varchar(4)
 
 12) To get int Month of the date
