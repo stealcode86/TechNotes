@@ -1,5 +1,6 @@
 # TechNotes
 
+
 1) Point environmental variable to bin folder in MongoDB
 
 2)Create database path to store data
