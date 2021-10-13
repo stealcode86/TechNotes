@@ -1,5 +1,4 @@
 # TechNotes
-Important Notes on the Tools / Technologies which I have worked on 
 
 https://dev.mysql.com/doc/refman/5.7/en/alter-table.html#:~:text=1%20To%20use%20ALTER%20TABLE%2C%20you%20need%20ALTER,optional%20and%20can%20be%20omitted.%20More%20items...%20
 1) Update using JOINS
