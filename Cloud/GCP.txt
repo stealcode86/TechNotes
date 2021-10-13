@@ -1,4 +1,5 @@
 # GCP notes
+---------------
 
 1) https://github.com/GoogleCloudPlatform/training-data-analyst/blob/1d9e223185c26d85357ad77f0053616e4b23e52b/CPB100/lab3b/sparkml/train_and_apply.py#L26-L32
 
