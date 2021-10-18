@@ -1,4 +1,4 @@
-#Spark using Scala
+Spark using Scala
 
 
 flatMap() : invokes individually for each element in the input RDD. Produce multiple output elements 
