@@ -1,4 +1,4 @@
-#SparkSQL using Scala
+SparkSQL using Scala
 ---------
 
 Creating Data Frames
