@@ -13,9 +13,11 @@ set txtSAPCountryCode='IN'  FROM  PADB.testowner.abc Est
 i) SELECT DATEADD(dd, 2, 
         DATEDIFF(dd, 0, GETDATE())) 'Date Part Only+2 days'
 
-3) SELECT COLUMN_NAME, TABLE_NAME, TABLE_SCHEMA
-FROM INFORMATION_SCHEMA.COLUMNS 
-WHERE COLUMN_NAME LIKE '%column_name%' AND TABLE_NAME LIKE '%CLX%'
+3) To get Column, table name and schema in a DB
+	use DBname
+	SELECT COLUMN_NAME, TABLE_NAME, TABLE_SCHEMA
+	FROM INFORMATION_SCHEMA.COLUMNS 
+	WHERE COLUMN_NAME LIKE '%column_name%' AND TABLE_NAME LIKE '%CLX%'
 
 4) Using where clause in UNION statement
 
