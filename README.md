@@ -204,3 +204,8 @@ Column_Name
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_CATALOG = 'PADB'
 AND COLUMN_NAME LIKE '%CHILD%';
+	
+21) To select the 3rd record from the top 10 records in a table
+select top 10 * from 
+( select * , ROW_NUMBER() OVER (ORDER BY txtEmpNo) as SrNo from DB.schema.TableName  ) as al
+where SrNo=3
