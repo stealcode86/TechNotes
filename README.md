@@ -292,9 +292,195 @@ PMD is a source code analyzer, which checks code against a predefined set of rul
 
 7. printStackTrace() should not be present
 
+31/10/2021
+
+24) Testing 
+
+    @Test
+    public void ageValidationTestValid() {
+        Assert.assertTrue(new AgeValidation().isAgeValid(25));
+    }
+
+Testing of single small units of code such as a method or a class and asserting certain behavior is called unit testing. It is done by developers.
+There are several frameworks available for automating unit tests. JUnit and TestNG are among the popular ones for Java.
+
+JUnit is an open-source unit testing framework for Java. It provides classes to write and run automated tests. It provides
+
+annotations to create and customize tests
+
+test fixtures (to fix state) for setting up each test
+
+assertions to test for expected results
+
+test suites for grouping tests
+
+Required JARs for JUnit: junit-4.12.jar, hamcrest-core-1.3.jar
+
+The JUnit Runner is responsible for constructing the instances of the test classes before running the tests. 
+It is also responsible for making them available for garbage collection after the tests.
+
+The org.junit.Test annotation turns a public method into a test method.
+
+A test method can either make assertions or expect exceptions.
+
+Assertions are statements which claim a certain output from a module to be tested. They compare expected results with actual results.
+
+If they match, the claim turns out to be true, and the test will pass.
+Otherwise, the claim turns out false, and the test will fail.
+
+The org.junit.Assert class is used for making assertions.
+
+The Assert class provides static methods for testing a variety of conditions. These methods accept actual and expected results for comparison and determine whether a test method will pass or fail.
+
+When a test fails, the test method throws an AssertionException. Optional error messages can be specified for Assertion exceptions. These exceptions are caught by JUnit and their messages are displayed.
+
+What if we can create multiple test classes as a group to execute them together?
+
+JUnit provides test suits to create groups of test classes so that the code maintainability is improved.
+
+The following annotations are used for creating test suites:
+
+@RunWith(Suite.class)
+@Suite.SuiteClasses({UserTest.class, ProductTest.class, OrderTest.class})
+public class TestSuiteDemo { ... }
+
+
+Code coverage aims at determining the extent to which code is tested during unit testing.
+
+With code coverage, you can determine the parts of the code which were not executed by test cases. You can then modify your unit tests to ensure those parts of the code are executed.
+
+The larger the code coverage, better is the chance of having a bug-free code.
+
+25) Exception Handling and Logging
+
+i) Type Exception , Throw
+An event occurring during the execution of a program and disrupting its normal flow is an exception.
+
+Checked Exceptions - Cause compilation errors and prevent compilation. ( Can be handled by programmers )
+UnChecked Exceptions - Cause runtime errors and abnormally terminate the programs.
+
+The throw keyword is used to explicitly generate exceptional events. Any object of type Throwable can be thrown (We will see Throwable soon).
+
+Exception e = new Exception();
+throw e;
+
+Also notice that we can pass a custom String message to the Exception constructor. This sets the message property of the exception and increases 
+the usability of our applications.
+
+throw new Exception(products[i].getName() + " out of stock");
+
+All the exceptions belong to the Exception class, which is a child of the Throwable class.
+
+String getMessage() - Returns the description of an exception
+void printStackTrace() - Displays the stack trace ( used for debugging )
+The throw keyword is used to explicitly mark an exceptional situation.
+
+Location of the exception : package, class, method, filename and line number
+Responding to the occurrence of an exception is called Exception Handling.
+
+Whenever there is a chance of an exception to occur in a method, we have two choices:
+ Handle the exception there itself
+or
+allow it to propagate to be handled somewhere else ( goes to the next class, next class and finally to the main class )
+
+Checked Exception - something like compilation exceptions
+Un Checked Exception - Runtime exceptions
+
+Using try-catch blocks, we can handle exceptions in an effective way.
+
+The code that can throw an exception is enclosed inside the try block. And a try block is immediately followed by one or more catch blocks or a finally block.
+
+- A catch block is an exception handler which can handle the exception specified as its argument. A catch block can accept objects of type Throwable or its sub classes only.
+
+-Whenever an exception is thrown inside a try block, it is immediately caught by the first matching catch block which can handle it. The code inside the try block 
+following the line causing the exception is ignored.
+
+-When an exception is caught and handled by a catch block, the execution continues from immediately after the try-catch block.
+
+-If no matching catch block is found, the exception will remain unhandled and will be propagated.
+
+-If no exception is thrown inside a try block, the catch blocks following it are ignored.
+
+A catch block which can handle objects of Exception class can catch all the exceptions. 
+This should always be the last catch block in the catch sequence.
+
+In such situations, the finally block plays an important role.
+It always executes, irrespective of whether an exception occurs or not.
+
+The finally block will be disrupted if an exception occurs inside it, or if System.exit() is invoked before it.
+
+ii) User defined Exception 
+
+To make an application more flexible and manageable, Java allows us to have our own custom exceptions. 
+This helps in working with specialized exceptions rather than a general one.
+
+We can create a user-defined exception class by extending the Exception class:
+
+class OutOfStockException extends Exception {
+    public OutOfStockException(String productName) {
+        super(productName);            // This string will be assigned to the message property of the exception 
+    }
+}
+
+This exception denotes a more specific event (out of stock), and hence can be handled in a more specialized way.
+
+
+26) Properties
+
+To manage these user-friendly messages easily, it is a good practice to maintain them in a common place. One way to do this is to use a properties file.
+Properties file is a text file used to store any kind of textual information in the form of key-value pairs.
+It can be easily understood by a Java application with the help of the java.util.Properties class.
+
+Properties files are usually used for
+
+Standardization of messages (user friendly messages)
+
+Configuration of enterprise applications
+
+Internationalization or localization
+
+To use the data from the properties file, we first need to read and load the properties file into a properties object. 
+The properties object can then be used to get the message value by passing the corresponding key.
+
+AppConfig.PROPERTIES.getProperty("OUT_OF_STOCK")
+AppConfig is a utility class in the AppConfig.java file present in the resources package. 
+This class has the code necessary for reading & loading key-value pairs from a properties file. Have a look at it.
+
+In AppConfig.java, the following line opens the file for reading:
+inputStream = AppConfig.class.getResourceAsStream("configuration.properties");
+And the following loads the content into the static properties object:
+PROPERTIES.load(inputStream);
+
+Using the properties object, we can get a property value by specifying its key:
+AppConfig.PROPERTIES.getProperty("OUT_OF_STOCK");
+
+27 ) Testing on Exception
+
+public class BillCalculatorTest {
+    @Rule
+    public ExpectedException ee = ExpectedException.none();        // Creating an empty rule
+    
+    @Test
+    public void processOrderInvalidTest() throws Exception {
+        Product[] products = new Product[1];
+        products[0] = new Product("Jeans", 499, 0);                // Creating a product with zero stock
+        
+        ee.expect(OutOfStockException.class);                      // Expecting a type of exception
+        ee.expectMessage("Jeans");                                 // Expecting a text in the exception message
+        BillCalculator billCalc = new BillCalculator();
+        billCalc.processOrder(products);
+    }
+}
+
 
 *----------- You can use Java's instanceOf operator to check the type of an object --------------------*
 
 Note: If a class implements multiple interfaces having the same default methods, it has to override them.
 From the overridden methods, the default methods of a specified interface can be called using the super keyword.
 E.g. MembershipCardHolder.super.addPointsFromFuelPurchase(500);
+
+Note: A try block should be always followed by either at least one catch or a finally block.
+
+Parent class exception should always be the last catch block.
+Error is a subclass of Throwable. 
+printStackTrace() helps the programmer to understand where the actual problem occurred. It helps to trace the exception.
