@@ -22,3 +22,18 @@ https://www.got-it.ai/solutions/excel-chat/excel-tutorial/data-entry/automatical
 5) Replace #N/A error with String 
 
 =IFNA(Sheet2!J1,CONCATENATE("'"," ","'",","))
+
+6) Excel - Shortcuts 
+
+F2 to edit a tab instead of starting all over again. ( fn+ F2 )
+Ctrl + Z - undo, Ctrl Y - redo 
+Ctrl + space bar -  Select entire column
+Shift + space bar - Select entire row
+Ctrl + + - Add column/ row 
+Ctrl + - - Delete column / row
+Alt + H + O + I - Fit to column Width
+Alt + H + O + A - Fit to row Width
+Alt + H + B + A - For border
+Alt + H + B + N - To remove borders
+$ - to look cells - $E$4 — locks Cell E4
+Alt  + H + H +N - No fill
