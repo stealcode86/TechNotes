@@ -37,3 +37,22 @@ Alt + H + B + A - For border <br/>
 Alt + H + B + N - To remove borders <br/>
 $ - to look cells - $E$4 — locks Cell E4 <br/>
 Alt  + H + H +N - No fill
+Ctrl + Shift + L — to add or remove filters in table columns 
+Ctrl + Shift + down arrow - to select data from that cell and below 
+Ctrl + Shift + 4 - Apply currency formatting 
+
+7) How to get data from another excel file in local
+
+='[beginner-DA-course.xlsx]Data’!L12
+=‘File name’TableName/SheetName!RowColumnNo:
+
+Statistics Formulas
+Average - AVERAGE(data[Amount]) ——  data - table name , amount - col name 
+Median - MEDIAN(data[Amount])
+Min - MIN(data[Amount])
+Max -MAX(data[Amount])
+UNIQUE(data[Products]) - To get distinct data in any column
+COUNTA(data[Products]) - To check no: of distinct products 
+SUMIFS (sum range, criteria range, criteria) 
+
+[VLOOKUP Tutorial](https://www.youtube.com/watch?v=aJXgqNhRWMM)
