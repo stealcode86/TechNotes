@@ -46,7 +46,8 @@ Ctrl + Shift + 4 - Apply currency formatting
 ='[beginner-DA-course.xlsx]Data’!L12
 =‘File name’TableName/SheetName!RowColumnNo:
 
-Statistics Formulas
+8) Statistics Formulas
+
 Average - AVERAGE(data[Amount]) ——  data - table name , amount - col name <br/>
 Median - MEDIAN(data[Amount]) <br/>
 Min - MIN(data[Amount]) <br/>
