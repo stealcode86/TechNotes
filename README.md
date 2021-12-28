@@ -47,12 +47,12 @@ Ctrl + Shift + 4 - Apply currency formatting
 =‘File name’TableName/SheetName!RowColumnNo:
 
 Statistics Formulas
-Average - AVERAGE(data[Amount]) ——  data - table name , amount - col name 
-Median - MEDIAN(data[Amount])
-Min - MIN(data[Amount])
-Max -MAX(data[Amount])
-UNIQUE(data[Products]) - To get distinct data in any column
-COUNTA(data[Products]) - To check no: of distinct products 
-SUMIFS (sum range, criteria range, criteria) 
+Average - AVERAGE(data[Amount]) ——  data - table name , amount - col name <br/>
+Median - MEDIAN(data[Amount]) <br/>
+Min - MIN(data[Amount]) <br/>
+Max -MAX(data[Amount]) <br/>
+UNIQUE(data[Products]) - To get distinct data in any column <br/>
+COUNTA(data[Products]) - To check no: of distinct products <br/>
+SUMIFS (sum range, criteria range, criteria) <br/>
 
 [VLOOKUP Tutorial](https://www.youtube.com/watch?v=aJXgqNhRWMM)
