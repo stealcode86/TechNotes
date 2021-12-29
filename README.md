@@ -57,3 +57,12 @@ COUNTA(data[Products]) - To check no: of distinct products <br/>
 SUMIFS (sum range, criteria range, criteria) <br/>
 
 [VLOOKUP Tutorial](https://www.youtube.com/watch?v=aJXgqNhRWMM)
+
+
+
+## References 
+
+[Excel Functions](https://excelfind.com/excel-functions/)
+[Excel Shortcuts](https://excelfind.com/excel-shortcuts/)
+
+
