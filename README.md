@@ -62,7 +62,7 @@ SUMIFS (sum range, criteria range, criteria) <br/>
 
 ## References 
 
-[Excel Functions](https://excelfind.com/excel-functions/)
+[Excel Functions](https://excelfind.com/excel-functions/) <br/>
 [Excel Shortcuts](https://excelfind.com/excel-shortcuts/)
 
 
