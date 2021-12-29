@@ -1,4 +1,4 @@
-#TechNotes
+# TechNotes
 
 1) Start the ZooKeeper service by doing the following:
 $bin/zookeeper-server-start.sh config/zookeeper.properties
