@@ -436,5 +436,8 @@ fltOfficeHours varchar(25)
 
 
 References
-https://www.sqlshack.com/learn-sql-intro-to-sql-server-loops/
-https://www.sqlshack.com/use-window-functions-sql-server/
+[Learn SQL: Intro to SQL Server loops](https://www.sqlshack.com/learn-sql-intro-to-sql-server-loops/)
+[How to use Window functions in SQL Server](https://www.sqlshack.com/use-window-functions-sql-server/)
+[SQL Cheat Sheet](https://towardsdatascience.com/sql-cheat-sheet-776f8e3189fa) <br/>
+(SQL Tuitorial)[https://www.w3schools.com/sql/default.asp] 
+	
