@@ -435,7 +435,7 @@ fltWFHApproved varchar(25),
 fltOfficeHours varchar(25)
 
 
-*-----* ---- References -----*-----*
+*-----* ---- References -----*-----* ///
 [Learn SQL: Intro to SQL Server loops](https://www.sqlshack.com/learn-sql-intro-to-sql-server-loops/) <br/>
 [How to use Window functions in SQL Server](https://www.sqlshack.com/use-window-functions-sql-server/) <br/>
 [SQL Cheat Sheet](https://towardsdatascience.com/sql-cheat-sheet-776f8e3189fa) <br/>
