@@ -65,5 +65,5 @@ SUMIFS (sum range, criteria range, criteria) <br/>
 [Excel Functions](https://excelfind.com/excel-functions/) <br/>
 [Excel Shortcuts](https://excelfind.com/excel-shortcuts/) <br/>
 [Excel Video Training](https://support.microsoft.com/en-us/office/excel-video-training-9bc05390-e94c-46af-a5b3-d7c22f6990bb)
-
+[Formulas and functions](https://support.microsoft.com/en-us/office/formulas-and-functions-294d9486-b332-48ed-b489-abe7d0f9eda9?ui=en-US&rs=en-US&ad=US#id0eaabaaa=errors)
 
