@@ -58,7 +58,7 @@ SUMIFS (sum range, criteria range, criteria) <br/>
 
 [VLOOKUP Tutorial](https://www.youtube.com/watch?v=aJXgqNhRWMM)
 
-
+9) [Web scraping made easy: import HTML tables or lists using Google Sheets and Excel](https://www.thedataschool.co.uk/anna-prosvetova/web-scraping-made-easy-import-html-tables-or-lists-using-google-sheets-and-excel)
 
 ## References 
 
