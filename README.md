@@ -56,9 +56,10 @@ UNIQUE(data[Products]) - To get distinct data in any column <br/>
 COUNTA(data[Products]) - To check no: of distinct products <br/>
 SUMIFS (sum range, criteria range, criteria) <br/>
 
-[VLOOKUP Tutorial](https://www.youtube.com/watch?v=aJXgqNhRWMM)
+9) [VLOOKUP Tutorial](https://www.youtube.com/watch?v=aJXgqNhRWMM) <BR/>
+   [VLOOKUP function](https://support.microsoft.com/en-us/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)
 
-9) [Web scraping made easy: import HTML tables or lists using Google Sheets and Excel](https://www.thedataschool.co.uk/anna-prosvetova/web-scraping-made-easy-import-html-tables-or-lists-using-google-sheets-and-excel)
+10) [Web scraping made easy: import HTML tables or lists using Google Sheets and Excel](https://www.thedataschool.co.uk/anna-prosvetova/web-scraping-made-easy-import-html-tables-or-lists-using-google-sheets-and-excel)
 
 ## References 
 
