@@ -60,6 +60,8 @@ SUMIFS (sum range, criteria range, criteria) <br/>
    [VLOOKUP function](https://support.microsoft.com/en-us/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)
 
 10) [Web scraping made easy: import HTML tables or lists using Google Sheets and Excel](https://www.thedataschool.co.uk/anna-prosvetova/web-scraping-made-easy-import-html-tables-or-lists-using-google-sheets-and-excel)
+11) [DATEDIF function](https://support.microsoft.com/en-us/office/datedif-function-25dba1a4-2812-480b-84dd-8b32a451b35c)
+12) [DAYS360 function](https://support.microsoft.com/en-us/office/days360-function-b9a509fd-49ef-407e-94df-0cbda5718c2a)
 
 ## References 
 
