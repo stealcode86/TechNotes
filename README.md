@@ -1,6 +1,7 @@
 # Tech Notes
 
 1) [VLOOKUP](https://support.google.com/docs/answer/3093318?hl=en)
+2) [DATEDIF](https://support.google.com/docs/answer/6055612?hl=en)
 
 *--*--* References *--*--*
 
