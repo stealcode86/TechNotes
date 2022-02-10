@@ -7,6 +7,8 @@
 4) To convert data using the CONVERT function
   =CONVERT(B2,"F","C") --converting from Farenheit to Celsius
   =CONVERT(D2,"mph","m/s") -- converting from Miles per hour to Metres per second
+5) To join more than 2 strings
+  =CONCATENATE(A3," ",B3)
 
 *--*--* References *--*--*
 
