@@ -2,8 +2,8 @@
 
 1) [VLOOKUP](https://support.google.com/docs/answer/3093318?hl=en)
 2) [DATEDIF](https://support.google.com/docs/answer/6055612?hl=en)
-3) Sorting using the function <br>
-    =SORT(A2:D6, 2, TRUE) 
+3) Sorting using the function 
+=SORT(A2:D6, 2, TRUE) 
 
 *--*--* References *--*--*
 
