@@ -17,7 +17,8 @@
  7) Value function 
   The VALUE function converts the text string to a numerical value.
 =VALUE()
-
+8) IFNA function is to replace the #N/A error with something more descriptive, like “Does not exist.”
+IFNA(value, value_if_NA)
 
 *--*--* References *--*--*
 
@@ -26,4 +27,5 @@
 
 
 =============()======== Notes =======()===============
-1) VLOOKUP can return data only from the right and not in the left. For Eg: A:F.. can return values only from B:F. Also it returns the first match value. So if we mention TRUE in the conditions, we might get the first data that is the closest match to the data we are looking up and might not get the actually data. Hence it is preferred to use FALSE.
+1) VLOOKUP can return data only from the right and not in the left. For Eg: A:F.. can return values only from B:F. Also it returns the first match value. So if we mention TRUE in the conditions, we might get the first data that is the closest match to the data we are looking up and might not get the actually data. Hence it is preferred to use FALSE. You want the column that matches the search key in a VLOOKUP formula to be on the left side of the data. VLOOKUP only looks at data to the right after a match is found. In other words, the index for VLOOKUP indicates columns to the right only. This may require you to move columns around before you use VLOOKUP.
+After you have populated data with the VLOOKUP formula, you may copy and paste the data as values only to remove the formulas so you can manipulate the data again. 
