@@ -9,6 +9,11 @@
   =CONVERT(D2,"mph","m/s") -- converting from Miles per hour to Metres per second
 5) To join more than 2 strings
   =CONCATENATE(A3," ",B3)
+6) String functions
+ =LEN()
+ =LEFT(,)
+ =RIGHT(,)
+ =FIND(,,)
 
 *--*--* References *--*--*
 
