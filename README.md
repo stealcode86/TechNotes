@@ -26,4 +26,4 @@
 
 
 =============()======== Notes =======()===============
-1) VLOOKUP can return data only from the right and not in the left. For Eg: A:F.. can return values only from B:F
+1) VLOOKUP can return data only from the right and not in the left. For Eg: A:F.. can return values only from B:F. Also it returns the first match value. So if we mention TRUE in the conditions, we might get the first data that is the closest match to the data we are looking up and might not get the actually data. Hence it is preferred to use FALSE.
