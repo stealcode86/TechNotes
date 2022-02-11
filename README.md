@@ -14,6 +14,10 @@
  =LEFT(,)
  =RIGHT(,)
  =FIND(,,)
+ 7) Value function 
+  The VALUE function converts the text string to a numerical value.
+=VALUE()
+
 
 *--*--* References *--*--*
 
