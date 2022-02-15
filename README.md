@@ -433,8 +433,18 @@ Alter table #ShalitTemp
 add  fltWFHSubmitted varchar(25),
 fltWFHApproved varchar(25),
 fltOfficeHours varchar(25)
+	
+36 ) SELECT INTO 
 
+The SELECT INTO statement copies data from one table into a new table.
 
+	SELECT *
+INTO newtable [IN externaldb]
+FROM oldtable
+WHERE condition;
+	
+The new table will be created with the column-names and types as defined in the old table. You can create new column names using the AS clause.
+	
 *-----* ---- References -----*-----* <br/>
 [Learn SQL: Intro to SQL Server loops](https://www.sqlshack.com/learn-sql-intro-to-sql-server-loops/) <br/>
 [How to use Window functions in SQL Server](https://www.sqlshack.com/use-window-functions-sql-server/) <br/>
