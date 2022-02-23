@@ -24,6 +24,7 @@ IFNA(value, value_if_NA)
 
 [Google Sheets training and help](https://support.google.com/a/users/answer/9282959?visit_id=637361702049227170-1815413770&rd=1) <br/>
 [Google Sheets cheat sheet](https://support.google.com/a/users/answer/9300022)
+https://www.coursera.org/learn/visualize-data/quiz/spAfZ/hands-on-activity-creating-filtering-and-customizing-charts/attempt
 
 
 =============()======== Notes =======()===============
