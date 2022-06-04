@@ -7,8 +7,7 @@
 	7) ggplot(data=penguins,aes(x=flipper_length_mm, y=body_mass_g))+geom_point(aes(color=species))
 	8) ?print() --- this syntax gives definition of a function and helps us learn more about the function 
 	9) First_variable <-" This is mny variable" ( variable name, assignment operator, value )
-	10) vec_jers <-c(20,85, 181.5, 2002) # Define vector 
-> vec_jers    … # Dsiplay vector 
+	10) vec_jers <-c(20,85, 181.5, 2002) # Define vector ....... > vec_jers    … # Dsiplay vector 
 	11) head(diamonds) -- to display first few columns and rows
 	12) `str()` and `glimpse()` functions will both return summaries of each column in your data arranged horizontally.
 	13) `colnames()` function. It returns a list of column names from your dataset.
