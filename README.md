@@ -63,6 +63,10 @@ SUMIFS (sum range, criteria range, criteria) <br/>
 11) [DATEDIF function](https://support.microsoft.com/en-us/office/datedif-function-25dba1a4-2812-480b-84dd-8b32a451b35c)
 12) [DAYS360 function](https://support.microsoft.com/en-us/office/days360-function-b9a509fd-49ef-407e-94df-0cbda5718c2a)
 13) [XLOOKUP function](https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929)
+14) Deleting blank Cells https://www.automateexcel.com/how-to/delete-rows-blank-cells/
+15) Remove first / last Characters https://www.ablebits.com/office-addins-blog/remove-first-last-characters-excel/
+16) Autofill A-Z https://www.addictivetips.com/microsoft-office/autofill-letters-from-a-z-in-excel/#:~:text=Select%20both%20and%20move%20the,also%20useful%20for%20filling%20formulas.
+
 
 ## References 
 
