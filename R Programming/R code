@@ -1,0 +1,86 @@
+	1) example_df <- bookings_df %>%
+	  select(arrival_date_year, arrival_date_month) %>% 
+	  unite(arrival_month_year, c("arrival_date_month", "arrival_date_year"), sep = " ")
+	
+	2) example_df <- bookings_df %>%
+	  mutate(guests = adults+children+babies)
+	head(example_df)
+	
+	3) example_df <- bookings_df %>% summarize(number_canceled=sum(is_canceled),average_lead_time=mean(lead_time))
+	head(example_df)
+	
+	4) ggplot(quartet,aes(x,y)) + geom_point() + geom_smooth(method = lm,se=FALSE) +facet_wrap(~set)
+	
+	5) ggplot(datasaurus_dozen,aes(x=x,y=y,color=dataset)) + geom_point() + theme_void() + theme(legend.position = "none") + facet_wrap(~dataset,ncol=3)
+	
+	6)   mutate(body_mass_kg = body_mass_g/1000)   -- returns tibble with new col 
+	> actual_sales <- c(150, 203, 137, 247, 116, 287)
+> predicted_sales <- c(200, 300, 150, 250, 150, 300)
+> bias(actual_sales,predicted_sales)
+[1] -35
+	Answer should be close to 0. (-) This means predicted sales are larger than actual sales. Which can mean they maybe ordering too much stock for the recent days
+	
+	7) hotel_summary <- 
+	  hotel_bookings %>%
+	  group_by(hotel) %>%
+	  summarise(average_lead_time=mean(lead_time),
+	            min_lead_time=min(lead_time),
+	            max_lead_time=max(lead_time))
+	
+	8) 4ggplot(data = penguins, mapping = aes(x = flipper_length_mm, y = body_mass_g)) +  geom_point()
+	
+	9) ggplot(data=penguins) + geom_point(mapping = aes(x=flipper_length_mm,y=body_mass_g, shape=species, color=species, size=species))
+	
+	10) ggplot(penguins, aes(x=flipper_length_mm, 
+	                 y= body_mass_g)) +
+	  geom_point() +
+	  geom_smooth()
+	
+	11) ggplot(data, aes(x=, y=))+  geom_point() +       geom_smooth(method="loess")   --- losses smoothing
+	
+	12) ggplot(data, aes(x=, y=)) + geom_point() +         geom_smooth(method="gam", formula = y ~s(x))  ---- gam smoothing
+	
+	13) ggplot(data = hotel_bookings) +
+	  geom_bar(mapping = aes(x = distribution_channel)) +
+	  facet_wrap(~deposit_type~market_segment) +
+	  theme(axis.text.x = element_text(angle = 45))
+	
+	14) data %>%    filter(variable1 == "DS") %>%   ggplot(aes(x = weight, y = variable2, colour = variable1)) +   geom_point(alpha = 0.3,  position = position_jitter()) + stat_smooth(method = "lm")
+	
+	15) ggplot(data=penguins) + geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g, color = species)) +
+	  labs(title = "Palmer Penguins: Body Mass vs Flipper Length", subtitle = " Sample of three penguin species", 
+	       caption = " Data collected by Dr. Jershone") +
+	    annotate("text", x=220, y=3500, label=" The Gentoos are the largest", color="purple", fontface="bold", 
+	             size=4.5, angle=25)
+	 To make the code smaller, we can assign it to a variable P and then do the following
+	
+	16) p <- ggplot(data=penguins) + geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g, color = species)) +
+	  labs(title = "Palmer Penguins: Body Mass vs Flipper Length", subtitle = " Sample of three penguin species", 
+	       caption = " Data collected by Dr. Jershone")
+	
+	p +  annotate("text", x=220, y=3500, label=" The Gentoos are the largest",fontface="bold", 
+	              size=4.5)
+	
+	17) ggplot(data = hotel_bookings) +
+	  geom_bar(mapping = aes(x = market_segment)) +
+	  facet_wrap(~hotel) +
+	  theme(axis.text.x = element_text(angle = 45)) +
+	  labs(title="Comparison of market segments by hotel type for hotel bookings",
+	       subtitle=paste0("Data from: ", mindate, " to ", maxdate))
+	
+	18) ggplot(data = hotel_bookings) +
+	  geom_bar(mapping = aes(x = market_segment)) +
+	  facet_wrap(~hotel) +
+	  theme(axis.text.x = element_text(angle = 45)) +
+	  labs(title="Comparison of market segments by hotel type for hotel bookings",
+	       caption=paste0("Data from: ", mindate, " to ", maxdate),
+	       x="Market Segment",
+	       y="Number of Bookings")
+	
+	19) install.packages(“vitae”)   — This will give us CV templates which we can build a Resume on.
+	
+	
+	
+	
+
+	
