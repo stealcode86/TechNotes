@@ -1,0 +1,65 @@
+1) PROCEDURES
+
+https://www.oracletutorial.com/plsql-tutorial/plsql-procedure/
+A PL/SQL procedure is a reusable unit that encapsulates specific business logic of the application. Technically speaking, a PL/SQL procedure is a named block stored as a schema object in the Oracle Database.
+
+Each parameter can be in either IN, OUT, or INOUT mode. The parameter mode specifies whether a parameter can be read from or write to.
+
+IN
+An IN parameter is read-only. You can reference an IN parameter inside a procedure, but you cannot change its value. Oracle uses IN as the default mode. It means that if you don’t specify the mode for a parameter explicitly, Oracle will use the IN mode.
+OUT
+An OUT parameter is writable. Typically, you set a returned value for the OUT parameter and return it to the calling program. Note that a procedure ignores the value that you supply for an OUT parameter.
+INOUT
+An INOUT parameter is both readable and writable. The procedure can read and modify it.
+Note that OR REPLACE option allows you to overwrite the current procedure with the new code.
+
+1) Declarative part
+In this part, you can declare variables, constants, cursors, etc. Unlike an anonymous block, a declaration part of a procedure does not start with the DECLARE keyword.
+2) Executable part
+This part contains one or more statements that implement specific business logic. It might contain only a NULL statement.
+3) Exception-handling part
+This part contains the code that handles exceptions.
+
+IN - the variable we give to the select query 
+OUT - the variable we get while running the select query
+
+https://www.tutorialspoint.com/plsql/plsql_procedures.htm
+
+2) FUNCTIONS
+
+https://www.oracletutorial.com/plsql-tutorial/plsql-function/
+Similar to a procedure, a PL/SQL function is a reusable program unit stored as a schema object in the Oracle Database. The following illustrates the syntax for creating a function:
+
+The function body is the same as the procedure body which has three sections: declarative section, executable section, and exception-handling section.
+• The declarative section is between the IS and BEGIN keywords. It is where you declare variables, constants, cursors, and user-defined types.
+• The executable section is between the BEGIN and END keywords. It is where you place the executable statements. Unlike a procedure, you must have at least one RETURN statement in the executable statement.
+• The exception-handling section is where you put the exception handler code.
+In these three sections, only the executable section is required, the others are optional.
+
+3) CURSORS
+
+https://www.oracletutorial.com/plsql-tutorial/plsql-cursor/
+A cursor is a pointer that points to a result of a query. PL/SQL has two types of cursors: implicit cursors and explicit cursors.
+
+
+Implicit cursors
+Whenever Oracle executes an SQL statement such as SELECT INTO, INSERT, UPDATE, and DELETE, it automatically creates an implicit cursor.
+Oracle internally manages the whole execution cycle of implicit cursors and reveals only the cursor’s information and statuses such as SQL%ROWCOUNT, SQL%ISOPEN, SQL%FOUND, and SQL%NOTFOUND.
+
+Explicit cursors
+An explicit cursor is an SELECT statement declared explicitly in the declaration section of the current block or a package specification.
+For an explicit cursor, you have control over its execution cycle from OPEN, FETCH, and CLOSE.
+Oracle defines an execution cycle that executes an SQL statement and associates a cursor with it.
+The following illustration shows the execution cycle of an explicit cursor:
+
+https://www.oracletutorial.com/plsql-tutorial/plsql-cursor-with-parameters/
+https://www.tutorialspoint.com/plsql/plsql_cursors.htm
+
+%NOTFOUND
+The logical opposite of %FOUND. It returns TRUE if an INSERT, UPDATE, or DELETE statement affected no rows, or a SELECT INTO statement returned no rows. Otherwise, it returns FALSE.
+
+
+
+
+
+
