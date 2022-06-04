@@ -15,9 +15,9 @@
 	
 	6)   mutate(body_mass_kg = body_mass_g/1000)   -- returns tibble with new col 
 	> actual_sales <- c(150, 203, 137, 247, 116, 287)
-> predicted_sales <- c(200, 300, 150, 250, 150, 300)
-> bias(actual_sales,predicted_sales)
-[1] -35
+	> predicted_sales <- c(200, 300, 150, 250, 150, 300)
+	> bias(actual_sales,predicted_sales)
+	[1] -35
 	Answer should be close to 0. (-) This means predicted sales are larger than actual sales. Which can mean they maybe ordering too much stock for the recent days
 	
 	7) hotel_summary <- 
