@@ -17,8 +17,8 @@ CARTESIAN / CROSS JOIN is like matrix multiplication ( 2 tables with 4 rows each
 SELF JOIN is joining the table with itself 
 TRUNCATE removes all data from table but table view remains, whereas DROP removes data and table itself ( DDL ). DELETE removes all data or specific data ( DML ). TRUNCATE is faster than delete and drop.
 Synonym - alternative name for an DB object ( table, view, sequence, procedure.
-CURSOR - Oracle PL/SQL Cursor: Implicit, Explicit, For Loop with Example (guru99.com)
-Line Number - How To Turn On Line Numbers in SQL Developer (databasestar.com)
+CURSOR - https://www.guru99.com/pl-sql-cursor.html#:~:text=Cursor%20Attributes%20%20%20%20Cursor%20Attribute%20,returns%20the%20numerical%20value.%20It%20gives%20...%20
+Line Number - https://www.databasestar.com/sql-developer-line-numbers/#:~:text=So%2C%20the%20first%20step%20is%20to%20go%20to,Gutter.%20The%20Show%20Line%20Numbersoption%20is%20then%20shown.
 
 TO_DATE(,'') - Converts char/ varchar etc. to required date type 
 For concatenate and sub string  - CONCAT(SUBSTR(m.firstname, 1, 1), SUBSTR(m.surname, 1, 5))
@@ -34,16 +34,16 @@ WHEN OTHERS THEN  -- catches all the remaining exceptions
      temp_apnt_state := FALSE;
 The TOO_MANY_ROWS exception is for ORA-01422 when you issue a SELECT .. INTO statement that returns more than one row. The exception you'll encounter in your case is ORA-01427, Single row subquery returns more than one row.
 
-PL/SQL Tables and User-Defined Records (oracle.com)
+[PL/SQL Tables and User-Defined Records (oracle.com)](https://docs.oracle.com/cd/A57673_01/DOC/server/doc/PLS23/ch4.htm?msclkid=5996aa0ea5dc11ec91c5b2fce7843b67)
 
-LISTAGG - Oracle / PLSQL: LISTAGG Function (techonthenet.com)
-REPLACE - Oracle / PLSQL: REPLACE Function (techonthenet.com)
+LISTAGG - [Oracle / PLSQL: LISTAGG Function (techonthenet.com)](https://www.techonthenet.com/oracle/functions/listagg.php#:~:text=Oracle%20%2F%20PLSQL%3A%20LISTAGG%20Function%201%20Description.%20The,LISTAGG%20function%20can%20be%20used%20in%20Oracle%2FPLSQL.%20?msclkid=03ca63dda5e211ecaab3f365dd916272)
+REPLACE - https://www.techonthenet.com/oracle/functions/replace.php?msclkid=18d28b81a5ec11ec90f002ec11f144e8
 
 TYPE ResponseLicDts IS REF CURSOR RETURN ResponseLicData; -- it is of ref cursor type and is returning the record
-ORACLE-BASE - Using Ref Cursors To Return Recordsets
-ORACLE-BASE - Complex Recordsets
+ORACLE-BASE - https://oracle-base.com/articles/misc/using-ref-cursors-to-return-recordsets
+ORACLE-BASE - [Complex Recordsets](https://oracle-base.com/articles/8i/complex-recordsets)
 DECODE function - Oracle / PLSQL: DECODE Function (techonthenet.com)
-SELECT (oracle.com)
+SELECT - https://docs.oracle.com/en/database/oracle/oracle-database/12.2/sqlrf/SELECT.html#GUID-CFA006CA-6FF1-4972-821E-6996142A51C6
 
 
 Select c.* from a,b,c inner join on a.id=b.id and b.id=c.id …… Displays all the rows of C Table.
@@ -53,6 +53,4 @@ with cte( code )as  ( select distinct pers_org_unit_reltn_typ_Cd -- trandesc(per
 from TPERS_ORG_RELTN )
 select trandesc(code),code from cte
 
-
-![image](https://user-images.githubusercontent.com/49140843/172792251-8814100a-77f5-4c71-8da7-eb09c5c0d194.png)
 
