@@ -66,6 +66,7 @@ SUMIFS (sum range, criteria range, criteria) <br/>
 14) Deleting blank Cells https://www.automateexcel.com/how-to/delete-rows-blank-cells/
 15) Remove first / last Characters https://www.ablebits.com/office-addins-blog/remove-first-last-characters-excel/
 16) Autofill A-Z https://www.addictivetips.com/microsoft-office/autofill-letters-from-a-z-in-excel/#:~:text=Select%20both%20and%20move%20the,also%20useful%20for%20filling%20formulas.
+17) Remove characters from left and right in a string https://www.extendoffice.com/documents/excel/560-excel-remove-character-from-string.html
 
 
 ## References 
