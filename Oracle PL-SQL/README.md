@@ -52,4 +52,6 @@ with cte( code )as  ( select distinct pers_org_unit_reltn_typ_Cd -- trandesc(per
 from TPERS_ORG_RELTN )
 select trandesc(code),code from cte
 
+36) Increase font size - https://www.youtube.com/watch?time_continue=36&v=10pk-fPUPpc&feature=emb_logo
+
 
