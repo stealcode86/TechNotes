@@ -1,10 +1,9 @@
 1) Multiple Select in one CTE https://stackoverflow.com/questions/9682488/multiple-select-against-one-cte
 2) Return value if no record is found https://stackoverflow.com/questions/8098795/return-a-value-if-no-record-is-found
 3) Multiple Concat https://www.techonthenet.com/oracle/functions/concat.php
-
-Select * from Dual 
-select SYSDATE+10 from DUAL ( Today + 10 days )
-Desc DUAL ( Table description )
+4) Select * from Dual 
+5) select SYSDATE+10 from DUAL ( Today + 10 days )
+6) Desc DUAL ( Table description )
 SELECT NAME || 'AGED' || AGE from Table ( concatenation of table names )
 SELECT NVL(DUMMY,0) from DUAL ( If dummy is null, it will be replaced by 0 ) --NVL - Null Value Logic
 SELECT NVL2(DUMMY,26, 0) from DUAL ( If dummy is null, it will be replaced by 0 else replace it will 26 ) 
