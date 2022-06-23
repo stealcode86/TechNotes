@@ -67,6 +67,8 @@ SUMIFS (sum range, criteria range, criteria) <br/>
 15) Remove first / last Characters https://www.ablebits.com/office-addins-blog/remove-first-last-characters-excel/
 16) Autofill A-Z https://www.addictivetips.com/microsoft-office/autofill-letters-from-a-z-in-excel/#:~:text=Select%20both%20and%20move%20the,also%20useful%20for%20filling%20formulas.
 17) Remove characters from left and right in a string https://www.extendoffice.com/documents/excel/560-excel-remove-character-from-string.html
+18) Split cell to columns https://support.microsoft.com/en-us/office/split-a-cell-f1804d0c-e180-4ed0-a2ae-973a0b7c6a23
+19) Split column of text using power query https://support.microsoft.com/en-us/office/split-a-column-of-text-power-query-5282d425-6dd0-46ca-95bf-8e0da9539662 
 
 
 ## References 
