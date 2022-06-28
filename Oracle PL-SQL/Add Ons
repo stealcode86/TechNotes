@@ -1,6 +1,0 @@
-1) How to install and Administer Oracle Rest Data Services
-https://www.oracle.com/webfolder/technetwork/tutorials/obe/db/ords/r30/Install_Administer_ORDS/Install_Administer_ORDS.html#section4
-( You might face firewall issues )
-If you face error like sql dev / ords / params. properties ( access is denied ).. 
-that means you are not able to write in that location and you need to install Oracle SQL Developer in another location. After that try installation process again. 
-( https://community.oracle.com/tech/developers/discussion/4127184/sqldev-ords-params-properties-permission-denied-when-trying-to-install-ords-using-sql-developer)
