@@ -58,7 +58,8 @@ https://www.tutorialspoint.com/plsql/plsql_cursors.htm
 %NOTFOUND
 The logical opposite of %FOUND. It returns TRUE if an INSERT, UPDATE, or DELETE statement affected no rows, or a SELECT INTO statement returned no rows. Otherwise, it returns FALSE.
 
-
+--- References ---
+https://www.oracletutorial.com/plsql-tutorial/plsql-procedure/
 
 
 
