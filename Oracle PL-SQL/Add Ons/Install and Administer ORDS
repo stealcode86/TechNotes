@@ -6,3 +6,5 @@ that means you are not able to write in that location and you need to install Or
 ( https://community.oracle.com/tech/developers/discussion/4127184/sqldev-ords-params-properties-permission-denied-when-trying-to-install-ords-using-sql-developer)
 To access UTL_HTTP Package, user needs to get access. 
 https://stackoverflow.com/questions/26369834/stored-procedure-error-pls-00201-identifier-utl-http-must-be-declared
+You might face memory issues if you configure ORDS in your system. 
+https://community.oracle.com/tech/apps-infra/discussion/4035353/there-is-insufficient-memory-for-the-java-runtime-environment-to-continue-error-in-weblogic-12c-ser
