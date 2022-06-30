@@ -54,5 +54,6 @@ select trandesc(code),code from cte
 
 36) Increase font size - https://www.youtube.com/watch?time_continue=36&v=10pk-fPUPpc&feature=emb_logo
 37) To Rename worksheet - https://www.thatjeffsmith.com/archive/2012/08/sql-developer-trick-renaming-your-worksheets/
+38) To concatenate multiple columns https://stackoverflow.com/questions/1619259/oracle-sql-concatenate-multiple-columns-add-text
 
 
