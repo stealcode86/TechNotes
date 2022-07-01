@@ -56,4 +56,4 @@ select trandesc(code),code from cte
 37) To Rename worksheet - https://www.thatjeffsmith.com/archive/2012/08/sql-developer-trick-renaming-your-worksheets/
 38) To concatenate multiple columns https://stackoverflow.com/questions/1619259/oracle-sql-concatenate-multiple-columns-add-text
 39) DECODE function like IF ELSE Condition https://www.techonthenet.com/oracle/functions/decode.php?msclkid=0ce0b892aaa711ecb6733b325a9ec974
-
+40) Select inside a FOR LOOP https://stackoverflow.com/questions/50211782/pl-sql-select-inside-loop
