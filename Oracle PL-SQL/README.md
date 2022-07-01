@@ -57,3 +57,4 @@ select trandesc(code),code from cte
 38) To concatenate multiple columns https://stackoverflow.com/questions/1619259/oracle-sql-concatenate-multiple-columns-add-text
 39) DECODE function like IF ELSE Condition https://www.techonthenet.com/oracle/functions/decode.php?msclkid=0ce0b892aaa711ecb6733b325a9ec974
 40) Select inside a FOR LOOP https://stackoverflow.com/questions/50211782/pl-sql-select-inside-loop
+41) ** Return a value if no record is return in SELECT https://stackoverflow.com/questions/8098795/return-a-value-if-no-record-is-found
