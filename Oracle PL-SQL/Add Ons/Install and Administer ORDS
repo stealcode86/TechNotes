@@ -8,3 +8,5 @@ To access UTL_HTTP Package, user needs to get access.
 https://stackoverflow.com/questions/26369834/stored-procedure-error-pls-00201-identifier-utl-http-must-be-declared
 You might face memory issues if you configure ORDS in your system. 
 https://community.oracle.com/tech/apps-infra/discussion/4035353/there-is-insufficient-memory-for-the-java-runtime-environment-to-continue-error-in-weblogic-12c-ser
+For ACL issues, try the below
+https://virtual-dba.com/blog/resolving-the-ora-24247/#:~:text=The%20best%20solution%20to%20the,ACL%20for%20the%20given%20host.
