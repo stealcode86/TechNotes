@@ -1,3 +1,4 @@
 1) ORA-01747 https://stackoverflow.com/questions/9459204/ora-01747-invalid-user-table-column-table-column-or-column-specification
 2) ORA-02287 https://stackoverflow.com/questions/34546009/ora-02287-sequence-number-not-allowed-here 
 ( Can't use seq number in a select statement when having an ORDER BY clause) 
+3) ORA-14551 https://ittutorial.org/ora-14551-cannot-perform-a-dml-operation-inside-a-query/#:~:text=This%20ORA%2D14551%20error%20is,the%20query%20or%20PDML%20slave.
