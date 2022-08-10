@@ -62,3 +62,4 @@ select trandesc(code),code from cte
 40) Select inside a FOR LOOP https://stackoverflow.com/questions/50211782/pl-sql-select-inside-loop
 41) ** Return a value if no record is return in SELECT https://stackoverflow.com/questions/8098795/return-a-value-if-no-record-is-found
 42) Complex count https://stackoverflow.com/questions/14378475/oracle-sql-group-by-single-field-and-count-the-grouped-rows
+43) Executing Functions https://www.foxinfotech.in/2018/07/how-to-execute-function-in-oracle-with-parameters.html
