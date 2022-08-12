@@ -63,3 +63,4 @@ select trandesc(code),code from cte
 41) ** Return a value if no record is return in SELECT https://stackoverflow.com/questions/8098795/return-a-value-if-no-record-is-found
 42) Complex count https://stackoverflow.com/questions/14378475/oracle-sql-group-by-single-field-and-count-the-grouped-rows
 43) Executing Functions https://www.foxinfotech.in/2018/07/how-to-execute-function-in-oracle-with-parameters.html
+44) Removing last characters of a string. select substr(column_name,1,length(column_name)-2) from table_name
