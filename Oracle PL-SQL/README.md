@@ -64,3 +64,4 @@ select trandesc(code),code from cte
 42) Complex count https://stackoverflow.com/questions/14378475/oracle-sql-group-by-single-field-and-count-the-grouped-rows
 43) Executing Functions https://www.foxinfotech.in/2018/07/how-to-execute-function-in-oracle-with-parameters.html
 44) Removing last characters of a string. select substr(column_name,1,length(column_name)-2) from table_name
+45) Accessing an HTTPS request .... select utl_http.request(‘https://www.google.com’, NULL,’file:/home/oracle/soddba/wallet’, ‘Orasod437’) from dual;
