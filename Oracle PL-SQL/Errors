@@ -2,3 +2,16 @@
 2) ORA-02287 https://stackoverflow.com/questions/34546009/ora-02287-sequence-number-not-allowed-here 
 ( Can't use seq number in a select statement when having an ORDER BY clause) 
 3) ORA-14551 https://ittutorial.org/ora-14551-cannot-perform-a-dml-operation-inside-a-query/#:~:text=This%20ORA%2D14551%20error%20is,the%20query%20or%20PDML%20slave.
+4) ORA-29273: HTTP request failed
+ORA-24247: network access denied by access control list (ACL)
+ORA-06512: at "SYS.UTL_HTTP", line 368
+ORA-06512: at "SYS.UTL_HTTP", line 1118ORA-06512: at "APEX_050100.WWV_FLOW_WEB_SERVICES", line 666
+ORA-06512: at "APEX_050100.WWV_FLOW_WEB_SERVICES", line 880
+ORA-06512: at "APEX_050100.WWV_FLOW_WEBSERVICES_API", line 239
+ORA-06512: at line 929273. 
+00000 -  "HTTP request failed"*Cause:    
+The UTL_HTTP package failed to execute the HTTP request.*Action:   
+Use get_detailed_sqlerrm to check the detailed error message.          
+Fix the error and retry the HTTP request.
+....................https://community.oracle.com/tech/developers/discussion/4156870/apex-web-service-authentication-with-bearer-token
+you need to setup the ACL for the APEX_050100 user, not for your parsing schema.
