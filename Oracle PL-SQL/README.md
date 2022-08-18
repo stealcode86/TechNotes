@@ -65,3 +65,4 @@ select trandesc(code),code from cte
 43) Executing Functions https://www.foxinfotech.in/2018/07/how-to-execute-function-in-oracle-with-parameters.html
 44) Removing last characters of a string. select substr(column_name,1,length(column_name)-2) from table_name
 45) Accessing an HTTPS request .... select utl_http.request(‘https://www.google.com’, NULL,’file:/home/oracle/soddba/wallet’, ‘Orasod437’) from dual;
+46) For getting records in JSON format https://blogs.oracle.com/database/post/generating-json-data
