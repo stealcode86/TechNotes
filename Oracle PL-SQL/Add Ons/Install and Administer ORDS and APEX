@@ -13,3 +13,8 @@ https://virtual-dba.com/blog/resolving-the-ora-24247/#:~:text=The%20best%20solut
 
 2) To install and configure APEX and ORDS
 https://oracle-base.com/articles/misc/oracle-application-express-apex-installation
+
+3) To get Bearer Token 
+https://docs.oracle.com/database/apex-5.1/AEAPI/OAUTH_AUTHENTICATE-Function.htm#AEAPI-GUID-F6BADD65-416C-4B2F-8B19-BE98C64D5D83
+4) To make a REST Request 
+https://docs.oracle.com/cd/E37097_01/doc.42/e35127/GUID-4AC0229D-85E2-439A-9485-531B7B8B6274.htm#AEAPI1955
