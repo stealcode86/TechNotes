@@ -66,3 +66,4 @@ select trandesc(code),code from cte
 44) Removing last characters of a string. select substr(column_name,1,length(column_name)-2) from table_name
 45) Accessing an HTTPS request .... select utl_http.request(‘https://www.google.com’, NULL,’file:/home/oracle/soddba/wallet’, ‘Orasod437’) from dual;
 46) For getting records in JSON format https://blogs.oracle.com/database/post/generating-json-data
+47) Get current Date and Time https://stackoverflow.com/questions/53644486/how-to-get-the-current-date-time-in-plsql
