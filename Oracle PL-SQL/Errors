@@ -22,3 +22,8 @@ you need to setup the ACL for the APEX_050100 user, not for your parsing schema.
 5) SQL Error: ORA-04054: database link JHANCOCK.COM does not exist
 04054. 00000 -  "database link %s does not exist"
 -- pass jhanock.com in quotes ' ' ( Pass it as a string )
+
+6) 15/4      PL/SQL: SQL Statement ignored
+16/68     PL/SQL: ORA-00984: column not allowed here
+Errors: check compiler log
+-- gave wrong column name ( column name that deosnt exist )
