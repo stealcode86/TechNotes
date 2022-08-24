@@ -1,7 +1,10 @@
 1) ORA-01747 https://stackoverflow.com/questions/9459204/ora-01747-invalid-user-table-column-table-column-or-column-specification
+
 2) ORA-02287 https://stackoverflow.com/questions/34546009/ora-02287-sequence-number-not-allowed-here 
 ( Can't use seq number in a select statement when having an ORDER BY clause) 
+
 3) ORA-14551 https://ittutorial.org/ora-14551-cannot-perform-a-dml-operation-inside-a-query/#:~:text=This%20ORA%2D14551%20error%20is,the%20query%20or%20PDML%20slave.
+
 4) ORA-29273: HTTP request failed
 ORA-24247: network access denied by access control list (ACL)
 ORA-06512: at "SYS.UTL_HTTP", line 368
@@ -15,3 +18,7 @@ Use get_detailed_sqlerrm to check the detailed error message.
 Fix the error and retry the HTTP request.
 ....................https://community.oracle.com/tech/developers/discussion/4156870/apex-web-service-authentication-with-bearer-token
 you need to setup the ACL for the APEX_050100 user, not for your parsing schema.
+
+5) SQL Error: ORA-04054: database link JHANCOCK.COM does not exist
+04054. 00000 -  "database link %s does not exist"
+-- pass jhanock.com in quotes ' ' ( Pass it as a string )
