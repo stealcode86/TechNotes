@@ -27,3 +27,6 @@ you need to setup the ACL for the APEX_050100 user, not for your parsing schema.
 16/68     PL/SQL: ORA-00984: column not allowed here
 Errors: check compiler log
 -- gave wrong column name ( column name that deosnt exist )
+
+7) PL/SQL: ORA-00984: column not allowed here 
+https://www.plsql.co/ora-00984-column-not-allowed-here.html
