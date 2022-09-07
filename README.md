@@ -451,10 +451,10 @@ The new table will be created with the column-names and types as defined in the 
 [SQL Cheat Sheet](https://towardsdatascience.com/sql-cheat-sheet-776f8e3189fa) <br/>
 [SQL Tuitorial](https://www.w3schools.com/sql/default.asp) <br/>
 [in-depth-guide-sql-best-practices](https://www.coursera.org/learn/data-preparation/supplement/gLnvK/in-depth-guide-sql-best-practices)
+[How to remove Duplicate Data in SQL | SQL Query to remove duplicate](https://www.youtube.com/watch?v=h48xzQR3wNQ&t=1113s)
+[Solving SQL Query | Rows to Column in SQL - Pivot Tables](https://www.youtube.com/watch?v=4p-G7fGhqRk)
 	
-	
-	
-	
+		
 (*)-------------------(*)-------------------------(*)
 1) Drop table removes the table from the database. So even the constraints and columns of the table are removed along with the data whereas delete table removes only the data from the table and the table structure and table is still present in the DB.
 
