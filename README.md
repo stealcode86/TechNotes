@@ -450,9 +450,9 @@ The new table will be created with the column-names and types as defined in the 
 [How to use Window functions in SQL Server](https://www.sqlshack.com/use-window-functions-sql-server/) <br/>
 [SQL Cheat Sheet](https://towardsdatascience.com/sql-cheat-sheet-776f8e3189fa) <br/>
 [SQL Tuitorial](https://www.w3schools.com/sql/default.asp) <br/>
-[in-depth-guide-sql-best-practices](https://www.coursera.org/learn/data-preparation/supplement/gLnvK/in-depth-guide-sql-best-practices)
-[How to remove Duplicate Data in SQL | SQL Query to remove duplicate](https://www.youtube.com/watch?v=h48xzQR3wNQ&t=1113s)
-[Solving SQL Query | Rows to Column in SQL - Pivot Tables](https://www.youtube.com/watch?v=4p-G7fGhqRk)
+[in-depth-guide-sql-best-practices](https://www.coursera.org/learn/data-preparation/supplement/gLnvK/in-depth-guide-sql-best-practices) <br/>
+[How to remove Duplicate Data in SQL | SQL Query to remove duplicate](https://www.youtube.com/watch?v=h48xzQR3wNQ&t=1113s) <br/>
+[Solving SQL Query | Rows to Column in SQL - Pivot Tables](https://www.youtube.com/watch?v=4p-G7fGhqRk) <br/>
 	
 		
 (*)-------------------(*)-------------------------(*)
