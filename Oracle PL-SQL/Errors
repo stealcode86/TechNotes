@@ -30,3 +30,6 @@ Errors: check compiler log
 
 7) PL/SQL: ORA-00984: column not allowed here 
 https://www.plsql.co/ora-00984-column-not-allowed-here.html
+
+8) ORA-06519: active autonomous transaction detected and rolled back.
+http://www.dba-oracle.com/t_ora_06519_active_autonomous_transaction_detected_and_rolled_back.html
