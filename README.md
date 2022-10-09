@@ -19,6 +19,7 @@
 =VALUE()
 8) IFNA function is to replace the #N/A error with something more descriptive, like “Does not exist.”
 IFNA(value, value_if_NA)
+9) To generate sequence of number/ dates etc https://www.makeuseof.com/use-sequence-function-google-sheets/
 
 *--*--* References *--*--*
 
