@@ -20,7 +20,7 @@
 8) IFNA function is to replace the #N/A error with something more descriptive, like “Does not exist.”
 IFNA(value, value_if_NA)
 9) To generate sequence of number/ dates etc https://www.makeuseof.com/use-sequence-function-google-sheets/
-
+10) To generate sequence of working days https://infoinspired.com/google-docs/spreadsheet/how-to-populate-sequential-dates-excluding-weekends-in-google-sheets/#:~:text=To%20autofill%20weekdays%20skipping%20weekends,formula%20will%20take%20care%20of!
 *--*--* References *--*--*
 
 [Google Sheets training and help](https://support.google.com/a/users/answer/9282959?visit_id=637361702049227170-1815413770&rd=1) <br/>
