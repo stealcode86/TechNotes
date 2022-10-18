@@ -36,3 +36,6 @@ http://www.dba-oracle.com/t_ora_06519_active_autonomous_transaction_detected_and
 
 9) SP2-0768: Illegal SPOOL command  
 https://stackoverflow.com/questions/26597317/passing-file-name-with-spaces-to-spool-command-using-sql-plus-gives-sp2-0768-ill
+
+10) ORA-20000: ORU-10027
+http://www.dba-oracle.com/t_ora_20000_oru_10027_buffer_overflow_limit.htm
