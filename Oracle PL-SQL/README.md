@@ -76,6 +76,8 @@ select trandesc(code),code from cte
 48) To generate random ID https://frontbackend.com/oracle/how-to-generate-random-uuid-in-oracle#:~:text=Using%20sys_guid%20function%20Oracle%20provide%20a%20function%20called,regexp_replace%20and%20rawtohex%20function%20to%20generate%20random%20UUID.
 49) How to export Data to a Flat File https://www.dataprix.com/en/blog-it/carlos/easily-export-data-oracle-flat-file#:~:text=A%20simple%20way%20to%20export,always%20work%20as%20we%20want
 https://stackoverflow.com/questions/26007399/spool-returns-empty-files-when-trying-to-export-from-sql-developer
-50) Query to get the user having access to the procedures 
+50) Query to get the user who is the owner of the procedures <br>
 select * from ALL_PROCEDURES ap where ap.owner like '%LARS_LOGON%';
+51) Query to check the permission for the user <br>
+se;ect * from USER_TAB_PRIVS where grantee=' ' and privilege='EXECUTE';
 
