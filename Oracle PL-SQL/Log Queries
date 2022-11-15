@@ -1,31 +1,31 @@
-    SELECT LINE, POSITION, REPLACE(TEXT, CHR(10), ' '), attribute 
-    FROM SYS.ALL_ERRORS A 
-    WHERE A.NAME = :NAME AND A.TYPE = :TYPE AND A.OWNER = LARS_OWNER
-    ORDER BY ATTRIBUTE, LINE, POSITION -- errors first
+1) SELECT LINE, POSITION, REPLACE(TEXT, CHR(10), ' '), attribute 
+FROM SYS.ALL_ERRORS A 
+WHERE A.NAME = :NAME AND A.TYPE = :TYPE AND A.OWNER = LARS_OWNER
+ORDER BY ATTRIBUTE, LINE, POSITION -- errors first
                 
     
-    SELECT 'SCHEMA' type, username owner, username object_name, null column_name, null column_id, null data_type 
+2) SELECT 'SCHEMA' type, username owner, username object_name, null column_name, null column_id, null data_type 
 FROM all_users WHERE rownum <=50
- and username like ? 
- union all 
+and username like ? 
+union all 
 SELECT 'COLUMN' type, owner, table_name object_name, column_name, column_id, data_type 
 FROM sys.all_tab_cols 
 WHERE hidden_column = 'NO' and rownum <=50 and owner = ? and table_name = ?  and column_name like ? 
- union all 
+union all 
 SELECT object_type type, owner  owner, object_name, null column_name, null column_id, null data_type 
 FROM all_objects 
 WHERE rownum <=50 and object_name not like 'BIN$%'  and object_type IN ('PROCEDURE','FUNCTION','PACKAGE','OPERATOR') 
- and object_name like ? 
- union all 
+and object_name like ? 
+union all 
 SELECT 'SEQUENCE' type, USER owner,  object_name, 'NEXTVAL' column_name, null column_id, null data_type 
 FROM sys.user_objects 
 WHERE object_type = 'SEQUENCE' and rownum <=50   and object_name like ?
 
 
-select UPPER(sys_context('USERENV', 'CURRENT_SCHEMA')) from dual
+3) select UPPER(sys_context('USERENV', 'CURRENT_SCHEMA')) from dual
 
-select count(1) cnt from user_errors
+4) select count(1) cnt from user_errors
 
-select owner,object_name from all_objects
+5) select owner,object_name from all_objects
 where object_type in ('TABLE','VIEW','SYNONYM')
 and object_name in (?,?)
