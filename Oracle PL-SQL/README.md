@@ -79,5 +79,5 @@ https://stackoverflow.com/questions/26007399/spool-returns-empty-files-when-tryi
 50) Query to get the user who is the owner of the procedures <br>
 select * from ALL_PROCEDURES ap where ap.owner like '%LARS_LOGON%';
 51) Query to check the permission for the user <br>
-se;ect * from USER_TAB_PRIVS where grantee=' ' and privilege='EXECUTE';
+select * from USER_TAB_PRIVS where grantee=' ' and privilege='EXECUTE';
 
