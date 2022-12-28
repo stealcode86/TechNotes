@@ -84,7 +84,9 @@ select * from USER_TAB_PRIVS where grantee=' ' and privilege='EXECUTE';
 select * from TABLE_NAME where regexp_like(substr(last_nm,0,4),'[:%,*&@ :]') and last_upd_by_Dtm is null;
 53) Query to check if apostrophe is present in column value <br>
 https://community.oracle.com/tech/developers/discussion/3986265/handling-apostophe
-   SELECT * FROM mytable WHERE err_desc = 'O''NEIL';
+SELECT * FROM mytable WHERE err_desc = 'O''NEIL';
+54) How to replace regex expressions for a column value <br>
+select regexp_replace(last_nm,'[:%,*&@ ''-:]','') new_last_nm from TABLE_NAME
 
 
 
