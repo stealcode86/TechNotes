@@ -1,4 +1,4 @@
--------------------------------- References ---------------------
+-------------------------------- References --------------------- <br>
 Best Doc -- https://docs.oracle.com/en/database/oracle/oracle-database/21/index.html
 
 https://docs.oracle.com/en/database/oracle/sql-developer/18.4/rptug/sql-developer-concepts-usage.html#GUID-7BE8E4DE-B2B6-4874-B3A0-B22D7001F146
