@@ -44,3 +44,7 @@ http://www.dba-oracle.com/t_ora_20000_oru_10027_buffer_overflow_limit.htm
 select d.rowid from tphysc_addr d, taddr_asoc c, tpers b where b.party_id_no = 569871 and b.pers_id_no = c.ent_id_no and c.addr_id_no = d.addr_id_no 
 and c.addr_typ_cd=50219 and c.addr_usag_cd=50592 and b.last_upd_by_dtm is null and c.last_upd_by_dtm is null and d.last_upd_by_dtm is null --fetch first 1 rows only;
 The above error was resolved after commenting fetch 
+
+12) ORA -01427
+https://stackoverflow.com/questions/21397694/how-to-fix-ora-01427-single-row-subquery-returns-more-than-one-row-in-select
+This happens when subquery returns more than 1 row. So please fix the subquery to send return only 1 row
