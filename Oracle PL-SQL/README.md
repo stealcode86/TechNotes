@@ -80,7 +80,12 @@ https://stackoverflow.com/questions/26007399/spool-returns-empty-files-when-tryi
 select * from ALL_PROCEDURES ap where ap.owner like '%LARS_LOGON%';
 51) Query to check the permission for the user <br>
 select * from USER_TAB_PRIVS where grantee=' ' and privilege='EXECUTE';
-52) Query to check special characters in a column 
+52) Query to check special characters in a column <br>
 select * from TABLE_NAME where regexp_like(substr(last_nm,0,4),'[:%,*&@ :]') and last_upd_by_Dtm is null;
+53) Query to check if apostrophe is present in column value <br>
+https://community.oracle.com/tech/developers/discussion/3986265/handling-apostophe
+   SELECT * FROM mytable WHERE err_desc = 'O''NEIL';
+
+
 
 
