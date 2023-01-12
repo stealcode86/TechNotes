@@ -48,3 +48,7 @@ The above error was resolved after commenting fetch
 12) ORA -01427
 https://stackoverflow.com/questions/21397694/how-to-fix-ora-01427-single-row-subquery-returns-more-than-one-row-in-select
 This happens when subquery returns more than 1 row. So please fix the subquery to send return only 1 row
+
+13) PLS-00201
+https://www.dba-oracle.com/t_pls_00201.htm
+Grant execute and create synonym for that procedure in the respective account that is trying to access the procedure. 
