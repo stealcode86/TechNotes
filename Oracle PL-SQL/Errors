@@ -52,3 +52,9 @@ This happens when subquery returns more than 1 row. So please fix the subquery t
 13) PLS-00201
 https://www.dba-oracle.com/t_pls_00201.htm
 Grant execute and create synonym for that procedure in the respective account that is trying to access the procedure. 
+
+14) PLS-00103
+https://stackoverflow.com/questions/20574967/pls-00103-encountered-the-symbol-when-expecting-one-of-the-following
+https://forums.oracle.com/ords/apexds/post/error-at-line-7-pls-00103-encountered-the-symbol-8632
+
+This error occurs if you miss to put / after ending of procedure/ triggers or missing some symbols
