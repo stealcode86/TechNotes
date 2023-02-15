@@ -100,8 +100,9 @@ https://docs.oracle.com/database/121/SQLRF/functions093.htm#SQLRF56668
 SELECT JSON_VALUE('{a:100}', '$.a') AS value
   FROM DUAL;
 
-57) To compare 2 CLOB VALUES in where clause ( otherwise we can't equate clob values in where caluse casually ) <br>
-https://stackoverflow.com/questions/85675/how-do-i-compare-two-clob-values-in-oracle
+57) To compare 2 CLOB VALUES in where clause ( You can't put a CLOB in the WHERE clause ) <br>
+https://stackoverflow.com/questions/85675/how-do-i-compare-two-clob-values-in-oracle <br>
+https://stackoverflow.com/questions/12980038/ora-00932-inconsistent-datatypes-expected-got-clob
 
 58) Comparision conditions
 https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/Comparison-Conditions.html#GUID-828576BF-E606-4EA6-B94B-BFF48B67F927
