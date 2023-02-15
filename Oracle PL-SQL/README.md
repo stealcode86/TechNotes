@@ -95,6 +95,10 @@ subject => 'UTL_MAIL Notification test', message => ' Congrats, this is working!
 mime_type => 'text; charset=us-ascii');
 END;
 
+56) To select JSON values from column using JSON_VALUE function
+https://docs.oracle.com/database/121/SQLRF/functions093.htm#SQLRF56668
+SELECT JSON_VALUE('{a:100}', '$.a') AS value
+  FROM DUAL;
 
 
 
