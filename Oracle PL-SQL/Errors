@@ -29,7 +29,8 @@ Errors: check compiler log
 -- gave wrong column name ( column name that deosnt exist )
 
 7) PL/SQL: ORA-00984: column not allowed here 
-https://www.plsql.co/ora-00984-column-not-allowed-here.html
+https://www.plsql.co/ora-00984-column-not-allowed-here.html <br>
+the column name is not present /declared in the procedure/ trigger etc
 
 8) ORA-06519: active autonomous transaction detected and rolled back.
 http://www.dba-oracle.com/t_ora_06519_active_autonomous_transaction_detected_and_rolled_back.html
@@ -58,3 +59,5 @@ https://stackoverflow.com/questions/20574967/pls-00103-encountered-the-symbol-wh
 https://forums.oracle.com/ords/apexds/post/error-at-line-7-pls-00103-encountered-the-symbol-8632
 
 This error occurs if you miss to put / after ending of procedure/ triggers or missing some symbols
+
+
