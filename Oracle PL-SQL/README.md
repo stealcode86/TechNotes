@@ -103,5 +103,8 @@ SELECT JSON_VALUE('{a:100}', '$.a') AS value
 57) To compare 2 CLOB VALUES in where clause ( otherwise we can't equate clob values in where caluse casually ) <br>
 https://stackoverflow.com/questions/85675/how-do-i-compare-two-clob-values-in-oracle
 
+58) Comparision conditions
+https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/Comparison-Conditions.html#GUID-828576BF-E606-4EA6-B94B-BFF48B67F927
+
 
 
