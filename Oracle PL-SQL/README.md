@@ -88,7 +88,7 @@ SELECT * FROM mytable WHERE err_desc = 'O''NEIL';
 54) How to replace regex expressions for a column value <br>
 select regexp_replace(last_nm,'[:%,*&@ ''-:]','') new_last_nm from TABLE_NAME
 
-55) How to Send mail using UTL_MAIL
+55) How to Send mail using UTL_MAIL <br>
 BEGIN
 UTL_MAIL.send( sender => 'sarul@gmail', recipients => 'sarul@gmail',
 subject => 'UTL_MAIL Notification test', message => ' Congrats, this is working! ', 
