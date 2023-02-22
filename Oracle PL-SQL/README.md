@@ -105,7 +105,8 @@ https://stackoverflow.com/questions/85675/how-do-i-compare-two-clob-values-in-or
 https://stackoverflow.com/questions/12980038/ora-00932-inconsistent-datatypes-expected-got-clob
 
 58) Comparision conditions
-https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/Comparison-Conditions.html#GUID-828576BF-E606-4EA6-B94B-BFF48B67F927
+https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/Comparison-Conditions.html#GUID-828576BF-E606-4EA6-B94B-BFF48B67F927 <br>
 
-
+59) To get the first row from the duplicates 
+https://stackoverflow.com/questions/59613880/how-get-first-row-from-duplicata-values-oracle-sql-query <br>
 
