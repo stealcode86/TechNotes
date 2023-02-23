@@ -1,1 +1,34 @@
-test
+https://docs.oracle.com/database/121/ADMIN/schedadmin.htm#ADMIN12038 <br>
+https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/scheduling-jobs-with-oracle-scheduler.html#GUID-33E699C5-E4CF-4147-B287-F56E5D4A9BA8  <br>
+
+BEGIN
+    dbms_scheduler.create_job (
+    job_name => 'ESP_ERROR_JOB_1',
+    job_type => 'STORED_PROCEDURE', -- 'PLSQL_BLOCK', type will not work as I am running a Procedure
+    job_action => 'LARS_OWNER.USP_ESP_BATCH_JOB',
+    start_date => systimestamp,
+    repeat_interval  =>  'FREQ=SECONDLY;INTERVAL=1800',
+    enabled => true
+    );
+END;
+
+/
+
+BEGIN
+    DBMS_SCHEDULER.SET_ATTRIBUTE (
+    name => 'ESP_ERROR_JOB',
+    attribute    =>  'repeat_interval',
+    value  =>  'FREQ=SECONDLY;INTERVAL=1800');
+END;
+/
+
+
+select * from user_scheduler_jobs;
+
+select job_name, enabled, run_count from user_scheduler_jobs;
+
+
+--BEGIN
+--  DBMS_SCHEDULER.DROP_JOB ('ESP_ERROR_JOB');
+--END;
+--/
