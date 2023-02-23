@@ -1,5 +1,5 @@
-https://docs.oracle.com/database/121/ADMIN/schedadmin.htm#ADMIN12038 <br>
-https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/scheduling-jobs-with-oracle-scheduler.html#GUID-33E699C5-E4CF-4147-B287-F56E5D4A9BA8  <br>
+https://docs.oracle.com/database/121/ADMIN/schedadmin.htm#ADMIN12038 
+https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/scheduling-jobs-with-oracle-scheduler.html#GUID-33E699C5-E4CF-4147-B287-F56E5D4A9BA8 
 
 BEGIN
     dbms_scheduler.create_job (
