@@ -110,3 +110,5 @@ https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/Comparison-C
 59) To get the first row from the duplicates 
 https://stackoverflow.com/questions/59613880/how-get-first-row-from-duplicata-values-oracle-sql-query <br>
 
+60) Convert timestamp to date/ hour
+https://stackoverflow.com/questions/37559741/convert-timestamp-to-date-in-oracle-sql
