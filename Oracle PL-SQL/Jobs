@@ -1,6 +1,8 @@
 https://docs.oracle.com/database/121/ADMIN/schedadmin.htm#ADMIN12038 
 https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/scheduling-jobs-with-oracle-scheduler.html#GUID-33E699C5-E4CF-4147-B287-F56E5D4A9BA8 
 
+
+1) Creating a Scheduled Job
 BEGIN
     dbms_scheduler.create_job (
     job_name => 'ESP_ERROR_JOB_1',
@@ -14,6 +16,8 @@ END;
 
 /
 
+2) Changing Attributes of the job
+
 BEGIN
     DBMS_SCHEDULER.SET_ATTRIBUTE (
     name => 'ESP_ERROR_JOB',
@@ -22,13 +26,39 @@ BEGIN
 END;
 /
 
-
-select * from user_scheduler_jobs;
-
-select job_name, enabled, run_count from user_scheduler_jobs;
-
+3) Drop a Job
 
 --BEGIN
 --  DBMS_SCHEDULER.DROP_JOB ('ESP_ERROR_JOB');
 --END;
 --/
+
+4) Setting various attributes
+BEGIN
+    DBMS_SCHEDULER.SET_ATTRIBUTE (
+    name => 'ESP_ERROR_JOB_1',
+    attribute    =>  'repeat_interval',
+    value  =>  'FREQ=HOURLY;INTERVAL=2');
+END;
+/
+
+BEGIN
+    DBMS_SCHEDULER.SET_ATTRIBUTE (
+    name => 'ESP_ERROR_JOB_1',
+    attribute    =>  'start_date',
+    value  =>  '28-FEB-2023 02:00:00 AM US/Eastern');
+END;
+/
+BEGIN
+    DBMS_SCHEDULER.SET_ATTRIBUTE (
+    name => 'ESP_ERROR_JOB_1',
+    attribute    =>  'comments',
+    value  =>  'Every 2 hours');
+END;
+/
+
+
+5) Queries
+select * from user_scheduler_jobs;
+
+select job_name, enabled, run_count from user_scheduler_jobs;
