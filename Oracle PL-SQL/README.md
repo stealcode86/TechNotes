@@ -112,3 +112,6 @@ https://stackoverflow.com/questions/59613880/how-get-first-row-from-duplicata-va
 
 60) Convert timestamp to date/ hour
 https://stackoverflow.com/questions/37559741/convert-timestamp-to-date-in-oracle-sql
+
+61) To get current DB name
+select ora_database_name from dual;
