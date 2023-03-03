@@ -62,3 +62,5 @@ END;
 select * from user_scheduler_jobs;
 
 select job_name, enabled, run_count from user_scheduler_jobs;
+
+rename WRONG_JOB_NAME to CORRECT_JOB_NAME;
