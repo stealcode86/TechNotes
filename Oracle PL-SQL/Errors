@@ -60,4 +60,10 @@ https://forums.oracle.com/ords/apexds/post/error-at-line-7-pls-00103-encountered
 
 This error occurs if you miss to put / after ending of procedure/ triggers or missing some symbols
 
+15) ORA-01849
+
+https://stackoverflow.com/questions/28742134/ora-01849-hour-must-be-between-1-and-12
+
+This error occurs when we are comparing 2 time formats and one is in AM/PM and the other is in 24 hr.
+
 
