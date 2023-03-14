@@ -115,3 +115,8 @@ https://stackoverflow.com/questions/37559741/convert-timestamp-to-date-in-oracle
 
 61) To get current DB name
 select ora_database_name from dual;
+
+62) To add preceeding 0s to a varchar / number if declaration of Char in procedure is not working
+https://www.techonthenet.com/oracle/functions/lpad.php
+LPAD('tech', 8, '0');
+Result: '0000tech'
