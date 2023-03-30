@@ -23,6 +23,10 @@ Set OutMail = OutApp.CreateItem(0)
 With OutMail
     .to = wb.Sheets("Sheet2").Range("A2").Value
     .Subject = wb.Sheets("Sheet2").Range("B2").Value
+    .Body = "Hi GBO Team," & vbNewLine & vbNewLine & _
+    "Please execute OLARR#CF job only. This is an on-request job." & vbNewLine & vbNewLine & _
+    "Thanks & Regards," & vbNewLine & _
+    "Stalin Joyson Arul"
     .Attachments.Add wb.FullName
     .Send
 End With
