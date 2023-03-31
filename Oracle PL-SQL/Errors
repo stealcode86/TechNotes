@@ -66,4 +66,10 @@ https://stackoverflow.com/questions/28742134/ora-01849-hour-must-be-between-1-an
 
 This error occurs when we are comparing 2 time formats and one is in AM/PM and the other is in 24 hr.
 
+16) What happens if the list of variables in the INTO clause does not match the SELECT list of the query? You will see one of the error messages shown in Table 1.
+
+ORA-00947: not enough values	The INTO list contains fewer variables than the SELECT list.
+ORA-00913: too many values	The INTO list contains more variables than the SELECT list.
+ORA-06502: PL/SQL: numeric or value error	The number of variables in the INTO and SELECT lists matches, but the data types do not match and Oracle Database was unable to convert implicitly from one type to the other.
+Table 1: Possible error messages if INTO and SELECT lists do not match
 
