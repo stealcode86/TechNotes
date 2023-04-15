@@ -131,7 +131,7 @@ The super() call should be the first line always
 
 If parent constructor has a parameter, super() must be invoked in child class else not required.
 
-super.setSalary(this.hours*this.wage)  -- to set parent class variables using child class variables 
+super.setSalary(this.hours*this.wage)  -- to set parent class variables using child class variables ( This can be done in child class only )
 
 14) Aggregation 
 
