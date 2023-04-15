@@ -195,10 +195,10 @@ Any class extending the abstract class must provide the missing implementation t
 @Override
     public void displayDetails()
 
-Have to override the method in abstract class
-Subclasses of abstract classes may or may not be abstract
-Abstract classes can have concrete methods
-Concrete subclasses of an abstract class must override all its abstract methods
+Have to override the method in abstract class.
+Subclasses of abstract classes may or may not be abstract.
+Abstract classes can have concrete methods.
+Concrete subclasses of an abstract class must override all its abstract methods.
 
 The abstract keyword signifies that something is not complete. It can be used with classes and methods.
 We use the abstract keyword when:
