@@ -120,3 +120,6 @@ select ora_database_name from dual;
 https://www.techonthenet.com/oracle/functions/lpad.php
 LPAD('tech', 8, '0');
 Result: '0000tech'
+
+63) We can't spool from a PL/ SQL block
+https://forums.oracle.com/ords/apexds/post/spooling-from-pl-sql-block-9339
