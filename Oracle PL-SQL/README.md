@@ -123,3 +123,6 @@ Result: '0000tech'
 
 63) We can't spool from a PL/ SQL block
 https://forums.oracle.com/ords/apexds/post/spooling-from-pl-sql-block-9339
+
+64) Query between 2 dates with hours
+https://stackoverflow.com/questions/32006534/oracle-query-between-two-dates-with-hours#:~:text=Select%20*%20from%20Datatable%20where%20DATE,mi%3Ass')%20%2B%20HOURS%3F
