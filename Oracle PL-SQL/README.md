@@ -129,3 +129,10 @@ https://stackoverflow.com/questions/32006534/oracle-query-between-two-dates-with
 
 65) Using case statement in a group by 
 https://stackoverflow.com/questions/11325268/how-do-i-use-group-by-based-on-a-case-statement-in-oracle
+
+66) Using case statement in select and partition by clause 
+select distinct case when p1.SMPLTRM_IND=1 then 'Simple Term' else 'Traditional Brokerage' end ST_TB, 
+case when p2.ready_to_send=1 then 'Yes' else 'No' end ready_to_Send,  
+count(*) over ( partition by (case when p1.SMPLTRM_IND=1 then 'one' else 'zero' end ) , ( case when p2.ready_to_send=1 then 'one' else 'zero' end ) ) count_0
+from tpers p1,tparty p2
+where p1.party_id_no = p2.party_id_no and p1.last_upd_by_dtm is null and p2.last_upd_by_dtm is null 
