@@ -126,3 +126,6 @@ https://forums.oracle.com/ords/apexds/post/spooling-from-pl-sql-block-9339
 
 64) Query between 2 dates with hours
 https://stackoverflow.com/questions/32006534/oracle-query-between-two-dates-with-hours#:~:text=Select%20*%20from%20Datatable%20where%20DATE,mi%3Ass')%20%2B%20HOURS%3F
+
+65) Using case statement in a group by 
+https://stackoverflow.com/questions/11325268/how-do-i-use-group-by-based-on-a-case-statement-in-oracle
