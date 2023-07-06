@@ -140,3 +140,6 @@ where p1.party_id_no = p2.party_id_no and p1.last_upd_by_dtm is null and p2.last
 
 67) Send PL/ SQL query output as excel attachment in mail
     https://stackoverflow.com/questions/48379171/send-sql-query-output-as-csv-attachment-pl-sql
+
+68) TO_CHAR to date time convert doc
+    https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/TO_CHAR-datetime.html#GUID-0C3EEFD1-AE3D-452D-BF23-2FC95664E78F
