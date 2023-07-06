@@ -137,3 +137,6 @@ case when p2.ready_to_send=1 then 'Yes' else 'No' end ready_to_Send,
 count(*) over ( partition by (case when p1.SMPLTRM_IND=1 then 'one' else 'zero' end ) , ( case when p2.ready_to_send=1 then 'one' else 'zero' end ) ) count_0
 from tpers p1,tparty p2
 where p1.party_id_no = p2.party_id_no and p1.last_upd_by_dtm is null and p2.last_upd_by_dtm is null 
+
+67) Send PL/ SQL query output as excel attachment in mail
+    https://stackoverflow.com/questions/48379171/send-sql-query-output-as-csv-attachment-pl-sql
