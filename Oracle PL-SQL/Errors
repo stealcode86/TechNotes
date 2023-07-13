@@ -73,3 +73,7 @@ ORA-00913: too many values	The INTO list contains more variables than the SELECT
 ORA-06502: PL/SQL: numeric or value error	The number of variables in the INTO and SELECT lists matches, but the data types do not match and Oracle Database was unable to convert implicitly from one type to the other.
 Table 1: Possible error messages if INTO and SELECT lists do not match
 
+17) ORA-01789: query block has incorrect number of result columns
+01789. 00000 -  "query block has incorrect number of result columns"
+In union clause , one of the select statements has lesser/ more number of columnas as compared to the other select statements.
+
