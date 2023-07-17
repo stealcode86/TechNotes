@@ -71,6 +71,7 @@ SUMIFS (sum range, criteria range, criteria) <br/>
 19) Split column of text using power query https://support.microsoft.com/en-us/office/split-a-column-of-text-power-query-5282d425-6dd0-46ca-95bf-8e0da9539662 
 20) Check if range of cells contain a specific text https://www.youtube.com/watch?v=FUnsLHqauBI
 21) Formula to check if the cell contains any space https://www.mrexcel.com/board/threads/does-a-cell-contain-a-space.94501/
+22) Delete rows if the column contains values from the TO BE REMOVED List https://www.tutorialspoint.com/how-to-delete-rows-if-a-column-contains-values-from-the-to-remove-list-in-excel
 
 ## References 
 
