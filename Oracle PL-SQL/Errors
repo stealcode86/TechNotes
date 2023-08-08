@@ -77,3 +77,7 @@ Table 1: Possible error messages if INTO and SELECT lists do not match
 01789. 00000 -  "query block has incorrect number of result columns"
 In union clause , one of the select statements has lesser/ more number of columnas as compared to the other select statements.
 
+18) ORA-30483: window functions are not allowed here 
+https://www.plsql.co/ora-30483-window-functions-are-not-allowed-here.html
+Can't use window functions in WHEAR clause
+
