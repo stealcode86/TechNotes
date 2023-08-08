@@ -130,7 +130,13 @@ https://stackoverflow.com/questions/32006534/oracle-query-between-two-dates-with
 65) Using case statement in a group by 
 https://stackoverflow.com/questions/11325268/how-do-i-use-group-by-based-on-a-case-statement-in-oracle
 
-66) Using case statement in select and partition by clause 
+66) INSTR function
+    https://www.w3resource.com/oracle/character-functions/oracle-instr-function.php
+ if INSTR('THIS IS THE THING','TH')>0 then
+blah blah
+end if;
+
+68) Using case statement in select and partition by clause 
 
 select distinct case when p1.SMPLTRM_IND=1 then 'Simple Term' else 'Traditional Brokerage' end ST_TB, 
 case when p2.ready_to_send=1 then 'Yes' else 'No' end ready_to_Send,  
