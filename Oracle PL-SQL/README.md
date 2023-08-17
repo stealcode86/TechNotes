@@ -149,3 +149,13 @@ where p1.party_id_no = p2.party_id_no and p1.last_upd_by_dtm is null and p2.last
 
 68) TO_CHAR to date time convert doc
     https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/TO_CHAR-datetime.html#GUID-0C3EEFD1-AE3D-452D-BF23-2FC95664E78F
+
+    69) Remove all character after a specific characters
+    https://stackoverflow.com/questions/7717566/remove-all-characters-after-a-specific-character-in-pl-sql
+SELECT
+    (CASE WHEN INSTR(field, '_') > 0
+        THEN substr(field, 1, instr(field, '_') -1)
+        ELSE field
+    END) AS field
+FROM
+    dual
