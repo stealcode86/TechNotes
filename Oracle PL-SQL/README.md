@@ -159,3 +159,8 @@ SELECT
     END) AS field
 FROM
     dual
+
+70) Split a string into 2 parts using a sepcial character 
+    https://stackoverflow.com/questions/39785005/how-to-split-string-by-a-special-character-and-get-into-2-separate-variables-in
+VARIABLE1 := substr(input,1,INSTR(input,',',1)-1);
+VARIABLE2 := substr(input,INSTR(input,',',1)+1);
