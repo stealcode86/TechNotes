@@ -7,6 +7,10 @@ desc SYS.USER_INDEXES
 
 SELECT INDEX_NAME, CLUSTERING_FACTOR FROM SYS.USER_INDEXES WHERE TABLE_NAME = 'TPARTY'
 
+Note: We can't use JOINS and fetch first 1 rows only clause when selecting into rowid 
+select a.rowid into l_rowid from a, b where a.id = b.id fetch first 1 rows only;
+It will give ORA-01445
+
 1) Multiple Select in one CTE https://stackoverflow.com/questions/9682488/multiple-select-against-one-cte
 2) Return value if no record is found https://stackoverflow.com/questions/8098795/return-a-value-if-no-record-is-found
 3) Multiple Concat https://www.techonthenet.com/oracle/functions/concat.php
