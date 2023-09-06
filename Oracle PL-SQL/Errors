@@ -89,3 +89,7 @@ Can't use window functions in WHERE clause
 Delete the record first in the child table, then in the primary table. 
 https://www.tekstream.com/resource-center/ora-02292-contstraint-violation-child-records-found/
 
+20) ORA-02291: integrity constraint (string.string) violated - parent key not found
+https://www.techonthenet.com/oracle/errors/ora02291.php
+Inserting record into the child table which is not present in the parent table.
+
