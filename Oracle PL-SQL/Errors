@@ -83,5 +83,9 @@ In union clause , one of the select statements has lesser/ more number of column
 
 18) ORA-30483: window functions are not allowed here 
 https://www.plsql.co/ora-30483-window-functions-are-not-allowed-here.html
-Can't use window functions in WHEAR clause
+Can't use window functions in WHERE clause
+
+19) ORA-02292: integrity constraint (COLLECT.FK_EMPLOYER) violated – child record found
+Delete the record first in the child table, then in the primary table. 
+https://www.tekstream.com/resource-center/ora-02292-contstraint-violation-child-records-found/
 
