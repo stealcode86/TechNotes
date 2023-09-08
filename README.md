@@ -444,7 +444,37 @@ FROM oldtable
 WHERE condition;
 	
 The new table will be created with the column-names and types as defined in the old table. You can create new column names using the AS clause.
-	
+
+37) For future reference. no of events updated in a minute/hour/days 
+
+SELECT
+  DATEADD(minute, DATEDIFF(minute, 0, updated_date), 0) AS minute,
+  COUNT (*) AS count
+FROM transaction_logs
+GROUP BY
+  DATEADD(minute, DATEDIFF(minute, 0, updated_date), 0)
+ORDER BY
+  minute desc;
+
+SELECT
+  DATEADD(HOUR, DATEDIFF(HOUR, 0, updated_date), 0) AS Hour,
+  COUNT (*) AS count
+FROM transaction_logs
+GROUP BY
+  DATEADD(HOUR, DATEDIFF(HOUR, 0, updated_date), 0)
+ORDER BY
+  Hour desc;
+
+SELECT
+  DATEADD(DAY, DATEDIFF(DAY, 0, updated_date), 0) AS DAY,
+  COUNT (*) AS count
+FROM transaction_logs
+GROUP BY
+  DATEADD(DAY, DATEDIFF(DAY, 0, updated_date), 0)
+ORDER BY
+  DAY desc;
+
+  
 *-----* ---- References -----*-----* <br/>
 [Learn SQL: Intro to SQL Server loops](https://www.sqlshack.com/learn-sql-intro-to-sql-server-loops/) <br/>
 [How to use Window functions in SQL Server](https://www.sqlshack.com/use-window-functions-sql-server/) <br/>
