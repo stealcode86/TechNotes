@@ -89,6 +89,12 @@ Can't use window functions in WHERE clause
 Delete the record first in the child table, then in the primary table. 
 https://www.tekstream.com/resource-center/ora-02292-contstraint-violation-child-records-found/
 
+20) ORA-01031: Insufficient Privileges
+This happens while creating a view. Run the below query.
+GRANT CREATE VIEW TO USER;
+https://linuxhint.com/grant-view-privileges-to-user-in-oracle/#:~:text=To%20grant%20the%20view%20privileges%20to%20users%20in%20Oracle%2C%20login,granted%20using%20the%20GRANT%20keyword.
+ 
+
 20) ORA-02291: integrity constraint (string.string) violated - parent key not found
 https://www.techonthenet.com/oracle/errors/ora02291.php
 Inserting record into the child table which is not present in the parent table.
