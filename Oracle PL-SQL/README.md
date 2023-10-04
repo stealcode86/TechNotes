@@ -168,3 +168,6 @@ FROM
     https://stackoverflow.com/questions/39785005/how-to-split-string-by-a-special-character-and-get-into-2-separate-variables-in
 VARIABLE1 := substr(input,1,INSTR(input,',',1)-1);
 VARIABLE2 := substr(input,INSTR(input,',',1)+1);
+
+71) Can't add a select statement in an if condition. Instead store the value in a variable and then use it in if condition.
+https://stackoverflow.com/questions/10200281/if-select-countcolumn-from-table-0-then
