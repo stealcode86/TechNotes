@@ -72,6 +72,7 @@ SUMIFS (sum range, criteria range, criteria) <br/>
 20) Check if range of cells contain a specific text https://www.youtube.com/watch?v=FUnsLHqauBI
 21) Formula to check if the cell contains any space https://www.mrexcel.com/board/threads/does-a-cell-contain-a-space.94501/
 22) Delete rows if the column contains values from the TO BE REMOVED List https://www.tutorialspoint.com/how-to-delete-rows-if-a-column-contains-values-from-the-to-remove-list-in-excel
+23) To remove duplicate rows  https://trumpexcel.com/find-and-remove-duplicates-in-excel/#Finding_and_Highlight_Duplicates_in_Multiple_Columns
 
 ## References 
 
