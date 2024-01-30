@@ -73,6 +73,10 @@ SUMIFS (sum range, criteria range, criteria) <br/>
 21) Formula to check if the cell contains any space https://www.mrexcel.com/board/threads/does-a-cell-contain-a-space.94501/
 22) Delete rows if the column contains values from the TO BE REMOVED List https://www.tutorialspoint.com/how-to-delete-rows-if-a-column-contains-values-from-the-to-remove-list-in-excel
 23) To remove duplicate rows  https://trumpexcel.com/find-and-remove-duplicates-in-excel/#Finding_and_Highlight_Duplicates_in_Multiple_Columns
+24) To split 16000 rows in a single column into 16 columns of 1000 rows each
+=INDEX($A:$A, ROW(B1) + ( COLUMN(B1) -2 ) *1000)
+Drag this formula to the next 15 columns and autofill.
+
 
 ## References 
 
