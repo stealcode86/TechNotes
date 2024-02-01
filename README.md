@@ -76,7 +76,8 @@ SUMIFS (sum range, criteria range, criteria) <br/>
 24) To split 16000 rows in a single column into 16 columns of 1000 rows each
 =INDEX($A:$A, ROW(B1) + ( COLUMN(B1) -2 ) *1000)
 Drag this formula to the next 15 columns and autofill.
-
+25) To concatenate dynamic texts, = and numbers.
+    https://exceloffthegrid.com/dynamic-text-number-formats/
 
 ## References 
 
