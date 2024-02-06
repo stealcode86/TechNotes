@@ -78,6 +78,8 @@ SUMIFS (sum range, criteria range, criteria) <br/>
 Drag this formula to the next 15 columns and autofill.
 25) To concatenate dynamic texts, = and numbers.
     https://exceloffthegrid.com/dynamic-text-number-formats/
+26) Send dynamic emails from excel using HyperLink
+    https://www.youtube.com/watch?v=WBHKxZUYn34
 
 ## References 
 
