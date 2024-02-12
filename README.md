@@ -80,7 +80,9 @@ Drag this formula to the next 15 columns and autofill.
     https://exceloffthegrid.com/dynamic-text-number-formats/
 26) Send dynamic emails from excel using HyperLink
     https://www.youtube.com/watch?v=WBHKxZUYn34
-
+27) Sening Mailrs from Excel
+    https://mailtrap.io/blog/excel-send-email/#Step-4-Run-the-code
+    
 ## References 
 
 [Excel Functions](https://excelfind.com/excel-functions/) <br/>
