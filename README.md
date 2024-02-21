@@ -474,6 +474,9 @@ GROUP BY
 ORDER BY
   DAY desc;
 
+  38) Update using Begin Transaction
+      https://learn.microsoft.com/en-us/sql/t-sql/language-elements/begin-transaction-transact-sql?view=sql-server-ver16
+
   
 *-----* ---- References -----*-----* <br/>
 [Learn SQL: Intro to SQL Server loops](https://www.sqlshack.com/learn-sql-intro-to-sql-server-loops/) <br/>
