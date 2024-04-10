@@ -99,3 +99,5 @@ https://linuxhint.com/grant-view-privileges-to-user-in-oracle/#:~:text=To%20gran
 https://www.techonthenet.com/oracle/errors/ora02291.php
 Inserting record into the child table which is not present in the parent table.
 
+21) ora-29279 smtp permanent error 501 5.5.2 rcpt to syntax error
+https://docs.oracle.com/database/121/ARPLS/u_smtp.htm#ARPLS71472
