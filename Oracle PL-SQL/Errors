@@ -101,3 +101,8 @@ Inserting record into the child table which is not present in the parent table.
 
 21) ora-29279 smtp permanent error 501 5.5.2 rcpt to syntax error
 https://docs.oracle.com/database/121/ARPLS/u_smtp.htm#ARPLS71472
+
+22) ORA-01843 Not a valid month
+Use select * from nls_session_parameters; 
+Then might have to change month from mm to MON
+https://stackoverflow.com/questions/21157224/ora-01843-not-a-valid-month-comparing-dates
