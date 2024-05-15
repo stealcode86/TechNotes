@@ -106,3 +106,8 @@ https://docs.oracle.com/database/121/ARPLS/u_smtp.htm#ARPLS71472
 Use select * from nls_session_parameters; 
 Then might have to change month from mm to MON
 https://stackoverflow.com/questions/21157224/ora-01843-not-a-valid-month-comparing-dates
+
+23) ORA-29024 Certification validation failure
+https://stackoverflow.com/questions/62851314/ora-29024-certificate-validation-failure-apex-and-https
+Probably have to add the SSL certificate to the oracle wallet.
+
