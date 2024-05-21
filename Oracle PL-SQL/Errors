@@ -109,5 +109,9 @@ https://stackoverflow.com/questions/21157224/ora-01843-not-a-valid-month-compari
 
 23) ORA-29024 Certification validation failure
 https://stackoverflow.com/questions/62851314/ora-29024-certificate-validation-failure-apex-and-https
-Probably have to add the SSL certificate to the oracle wallet.
+Add the SSL certificate to the oracle wallet and reboot the listener.
+
+24) pls-00306 wrong number or types of arguments in call to make_rest_request_b
+Correct the type of argument that you gave while calling the procedure. 
+V.I - Make sure to read all errors properly before googling 
 
