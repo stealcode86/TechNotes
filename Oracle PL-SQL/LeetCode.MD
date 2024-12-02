@@ -6,3 +6,4 @@ I'm just listing all of LeetCode's excellent conceptual RDBMS challenges here.
 4) [Average Selling Price](https://leetcode.com/problems/average-selling-price/submissions/1466536978/) - Coalese, Round, Sum, LJ
 5) [Students and Examinations](https://leetcode.com/problems/students-and-examinations/description/) - Cross Join
 6) [Movie Rating](https://leetcode.com/problems/movie-rating/submissions/1468562330/) - Medium
+7) [Primary Department for each employee](https://leetcode.com/problems/primary-department-for-each-employee/submissions/1468647005/) - Union
