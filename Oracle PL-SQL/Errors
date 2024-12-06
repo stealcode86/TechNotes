@@ -115,3 +115,6 @@ Add the SSL certificate to the oracle wallet and reboot the listener.
 Correct the type of argument that you gave while calling the procedure. 
 V.I - Make sure to read all errors properly before googling 
 
+25) ORA-32039: recursive WITH clause must have column alias list
+https://stackoverflow.com/questions/58334447/missing-keyword-error-in-oracle-when-i-tried-the-concept-of-with-clause-in-cte
+
