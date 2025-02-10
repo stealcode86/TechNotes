@@ -8,3 +8,4 @@ I'm just listing all of LeetCode's excellent conceptual RDBMS challenges here.
 6) [Movie Rating](https://leetcode.com/problems/movie-rating/submissions/1468562330/) - Medium
 7) [Primary Department for each employee](https://leetcode.com/problems/primary-department-for-each-employee/submissions/1468647005/) - Union
 8) [Count Salary Categories](https://leetcode.com/problems/count-salary-categories/) - Union All
+9) [Find Students Who Improved](https://leetcode.com/problems/find-students-who-improved/) - Min() over(), first_value()
