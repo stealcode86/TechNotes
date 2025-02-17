@@ -1,0 +1,1 @@
+https://quickstarts.snowflake.com
